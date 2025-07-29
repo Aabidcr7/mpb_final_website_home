@@ -10,11 +10,12 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center py-3 lg:py-3 gap-4 lg:gap-0">
           {/* Logo and Mobile Menu Toggle */}
           <div className="flex justify-between items-center w-full lg:w-auto">
+            <a href="https://myprobuddy.com"  rel="noopener noreferrer" className="flex items-center">
             <img 
               src="/images/img_header_logo.png" 
               alt="MyPitchDeck Logo" 
               className="w-[150px] sm:w-[180px] lg:w-[230px] h-auto"
-            />
+            /></a>
             
             {/* Hamburger Menu Icon (Mobile only) */}
             <button 

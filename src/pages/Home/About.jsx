@@ -226,7 +226,7 @@ const About = () => {
             {/* Section Header */}
             <div className="flex flex-col justify-center items-center w-full max-w-[1232px]">
               <h2  className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" 
-  style={{ letterSpacing: '-2px',textAlign: 'center' }}>
+  style={{ letterSpacing: '-2px' , textAlign: 'center' }}>
                 <span className="text-global-5" style={{ color: '#5d248f' }}>Fueling Startup Success with</span>
                 <span className="text-global-1"> </span>
                 <span className="text-[#fc5109]">Purpose</span>

@@ -75,7 +75,7 @@ const StatisticsSection = () => {
                     />
                   </div>
                   <img
-                    src="/images/img__1.png"
+                src="/images/img_image_etu0ian.png"
                     alt="User Avatar 3"
                     className="w-[38px] h-[38px] rounded-[18px] border-2 border-white -ml-2"
                   />
