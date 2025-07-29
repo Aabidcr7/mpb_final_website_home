@@ -121,13 +121,13 @@ const About = () => {
             <div className="flex flex-col lg:flex-row justify-start items-start w-full gap-8 lg:gap-0">
               {/* Left Content */}
               <div className="flex flex-col justify-start items-start w-full lg:w-1/2">
-                <h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6 text-left" style={{ letterSpacing: '-2px' }} >
+                <h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6 text-center sm:text-left" style={{ letterSpacing: '-2px' }} >
                   <span className="text-global-4" style={{ color: '#5d248f' }}>What Sets Us</span>
                   <span className="text-global-1"> </span>
                   <span className="text-[#fc5109]">Apart</span>
                 </h2>
                 
-                <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-left text-global-6 mt-1 sm:mt-2 md:mt-[6px] max-w-[500px]">
+                <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center sm:text-left text-global-6 mt-1 sm:mt-2 md:mt-[6px] max-w-[500px]">
                   We turn startups into compelling investment opportunities through market insight, investor access, and hands-on support.
                 </p>
 
@@ -226,7 +226,7 @@ const About = () => {
             {/* Section Header */}
             <div className="flex flex-col justify-center items-center w-full max-w-[1232px]">
               <h2  className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" 
-  style={{ letterSpacing: '-2px' }}>
+  style={{ letterSpacing: '-2px',textAlign: 'center' }}>
                 <span className="text-global-5" style={{ color: '#5d248f' }}>Fueling Startup Success with</span>
                 <span className="text-global-1"> </span>
                 <span className="text-[#fc5109]">Purpose</span>
