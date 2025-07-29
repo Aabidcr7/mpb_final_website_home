@@ -41,42 +41,42 @@ const RecognitionSection = () => {
   {
     src: '/images/20.png',
     alt: 'IIC Logo',
-    className: 'w-[160px] h-[82px]', // unified size
+    className: 'w-[160px] h-[100px]', // unified size
   },
   {
     src: '/images/21.png',
     alt: 'Ministry Logo',
-    className: 'w-[142px] h-[86px]',
+    className: 'w-[142px] h-[100px]',
   },
   {
     src: '/images/22.png',
     alt: 'MOE Logo',
-    className: 'w-[140px] h-[72px]',
+    className: 'w-[140px] h-[100px]',
   },
   {
     src: '/images/23.png',
     alt: 'EDII Logo',
-    className: 'w-[166px] h-[106px]',
+    className: 'w-[166px] h-[100px]',
   },
   {
     src: '/images/24.png',
     alt: 'AICTE Logo',
-    className: 'w-[162px] h-[106px]',
+    className: 'w-[162px] h-[100px]',
   },
   {
     src: '/images/25.png',
     alt: 'Additional Logo',
-    className: 'w-[142px] h-[106px]',
+    className: 'w-[142px] h-[100px]',
   },
   {
     src: '/images/26.png',
     alt: 'Additional Logo',
-    className: 'w-[142px] h-[120px]',
+    className: 'w-[142px] h-[100px]',
   },
   {
     src: '/images/50.png',
     alt: 'Additional Logo',
-    className: 'w-[142px] h-[120px]',
+    className: 'w-[142px] h-[100px]',
   },
 ];
 
@@ -117,42 +117,42 @@ const RecognitionSection = () => {
   {
     src: '/images/img_item_rook_u.png',
     alt: 'Rook U Partner',
-    className: 'pt-4 w-[90px] h-[70px] lg:w-[128px] lg:h-[100px]',
+    className: 'pt-4 w-[90px] h-[70px] lg:w-[128px] lg:h-[106px]',
   },
   {
     src: '/images/img_item_realm_rook.png',
     alt: 'Realm Rook Partner',
-    className: 'pt-2 w-[140px] h-[100px] lg:w-[210px] lg:h-[150px]',
+    className: 'pt-2 w-[140px] h-[100px] lg:w-[210px] lg:h-[106px]',
   },
   {
     src: '/images/img_item_prudent_capital.png',
     alt: 'Prudent Capital Partner',
-    className: 'pt-4 w-[160px] h-[65px] lg:w-[258px] lg:h-[85px]',
+    className: 'pt-4 w-[160px] h-[65px] lg:w-[258px] lg:h-[106px]',
   },
   {
     src: '/images/img_item_parminder.png',
     alt: 'Parminder Partner',
-    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[116px]',
+    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[106px]',
   },
   {
     src: '/images/35.png',
     alt: 'Partner Logo',
-    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[116px]',
+    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[106px]',
   },
   {
     src: '/images/36.jpg',
     alt: 'Partner Logo',
-    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[116px]',
+    className: 'w-[85px] h-[95px] lg:w-[108px] lg:h-[106px]',
   },
   {
     src: '/images/37.png',
     alt: 'Partner Logo',
-    className: 'w-[120px] h-[80px] lg:w-[170px] lg:h-[95px]',
+    className: 'w-[120px] h-[80px] lg:w-[170px] lg:h-[106px]',
   },
   {
     src: '/images/38.png',
     alt: 'Partner Logo',
-    className: 'w-[110px] h-[90px] lg:w-[150px] lg:h-[116px]',
+    className: 'w-[110px] h-[90px] lg:w-[150px] lg:h-[106px]',
   },
 ];
 
