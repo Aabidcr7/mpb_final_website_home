@@ -69,9 +69,9 @@ const ContactFormSection = () => {
       </div>
 
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative">
-        <div className="flex flex-col lg:flex-row justify-between items-center py-20 lg:py-24 gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row justify-between items-center py-8 lg:py-24 gap-6 lg:gap-16">
           {/* Left Content - Call to Action */}
-          <div className="w-full lg:w-[45%] flex flex-col gap-6 lg:gap-8 justify-start items-start text-center lg:text-left">
+          <div className="w-full lg:w-[45%] flex flex-col gap-2 lg:gap-8 justify-start items-start text-center lg:text-left">
             <div className="flex flex-col gap-0 lg:gap-3">
               <h2
                 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-0 sm:mb-2 lg:mb-3"

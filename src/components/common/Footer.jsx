@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
+    <footer className="w-full bg-black text-white pt-16 pb-8">
+      <div className="w-full max-w-[1440px] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Left section - Branding */}
           <div className="md:col-span-1">
@@ -63,17 +63,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Services</h3>
             <ul className="space-y-3">
               <li>
-                <a href="https://debt.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://debt.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Debt Funding
                 </a>
               </li>
               <li>
-                <a href="https://grants.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://grants.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Grants
                 </a>
               </li>
               <li>
-                <a href="https://equity.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://equity.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Equity Funding
                 </a>
               </li>
@@ -85,22 +85,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Explore More</h3>
             <ul className="space-y-3">
               <li>
-                <a href="https://investor.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://investor.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Investor
                 </a>
               </li>
               <li>
-                <a href="https://partners.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://partners.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Partners
                 </a>
               </li>
               <li>
-                <a href="https://portfolio.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://portfolio.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="https://grants.myprobuddy.com/chatbot" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://grants.myprobuddy.com/chatbot" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Grants AI Agent
                 </a>
               </li>
@@ -112,37 +112,37 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="https://www.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/about-us" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/about-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   About us
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/founders-insights" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/founders-insights" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Blogs
                 </a>
               </li>
               <li>
-                <a href="https://myprobuddy.zohorecruit.in/jobs/Careers" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://myprobuddy.zohorecruit.in/jobs/Careers" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Careers
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/contact-us" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/contact-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Contact
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/privacy-policy" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.myprobuddy.com/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Terms & Conditions
                 </a>
               </li>
