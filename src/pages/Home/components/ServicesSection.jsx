@@ -20,7 +20,7 @@ const ServicesSection = () => {
               <div className="flex flex-col justify-start items-center text-center max-w-4xl" data-aos="fade-up" data-aos-delay="0">
 <h2 
   className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" 
-  style={{ letterSpacing: '-2px' }}
+  style={{ letterSpacing: '-2px' , fontFamily: 'Poppins, sans-serif' }}
   data-aos="fade-up"
   data-aos-delay="0"
 >
@@ -35,19 +35,23 @@ const ServicesSection = () => {
                 {/* Left Column - Trusted Startups */}
                 <div className="w-full lg:w-[45%] flex flex-col gap-6 lg:gap-8 justify-between bg-white shadow-xl rounded-3xl p-6 lg:p-8 min-h-[420px]" data-aos="fade-up" data-aos-delay="1000">
                   <div className="flex flex-col gap-4 justify-start items-start">
-                    <h3 className="text-[26px] sm:text-[30px] lg:text-[32px] font-poppins font-semibold leading-[36px] sm:leading-[42px] lg:leading-[44px] text-[#693795]">
+                    <h3 className="text-[26px] sm:text-[30px] lg:text-[32px] font-poppins font-semibold leading-[36px] sm:leading-[42px] lg:leading-[44px] text-[#693795]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       Trusted by 100+ Startups
                     </h3>
-                    <p className="text-base lg:text-lg font-poppins font-normal leading-[24px] lg:leading-[28px] text-[#666666]">
+                    <p className="text-base lg:text-lg font-poppins font-normal leading-[24px] lg:leading-[28px] text-[#666666]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       We made 100+ seed-stage startups investor-ready and fundable with our proven methodology.
                     </p>
-                    <Button
-                      variant="orange"
-                      size="small"
-                      className="text-xs lg:text-sm font-poppins font-medium leading-[16px] text-white bg-[#fc5109] hover:bg-[#fc520c] hover:scale-105 hover:shadow-lg px-4 lg:px-5 py-2 lg:py-2 rounded-[16px] transition-all duration-200"
-                    >
-                      Become the next success story
-                    </Button>
+                    <a href="https://equity.myprobuddy.com/auth?signup=true" target="_blank" rel="noopener noreferrer">
+  <Button
+    variant="orange"
+    size="small"
+    className="text-xs lg:text-sm font-poppins font-medium leading-[16px] text-white bg-[#fc5109] hover:bg-[#fc520c] hover:scale-105 hover:shadow-lg px-4 lg:px-5 py-2 lg:py-2 rounded-[16px] transition-all duration-200"
+    style={{ fontFamily: 'Poppins, sans-serif' }}
+  >
+    Become the next success story
+  </Button>
+</a>
+
                   </div>
                   
                   {/* Company Logos - Better Organization */}
@@ -347,10 +351,10 @@ const ServicesSection = () => {
                 {/* Right Column - Expert Services */}
                 <div className="w-full lg:w-[55%] flex flex-col gap-6 lg:gap-8 justify-start items-start bg-[#693795] rounded-3xl p-8 lg:p-10" data-aos="fade-up" data-aos-delay="0">
                   <div className="text-center lg:text-left">
-                    <h3 className="text-[26px] sm:text-[30px] lg:text-[32px] font-poppins font-semibold leading-[36px] sm:leading-[42px] lg:leading-[44px] text-white mb-4">
+                    <h3 className="text-[26px] sm:text-[30px] lg:text-[32px] font-poppins font-semibold leading-[36px] sm:leading-[42px] lg:leading-[44px] text-white mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       A Proven Track Record of Negotiating the Best Deals
                     </h3>
-                    <p className="text-base lg:text-lg font-poppins font-normal leading-[24px] lg:leading-[28px] text-white/90">
+                    <p className="text-base lg:text-lg font-poppins font-normal leading-[24px] lg:leading-[28px] text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                       With a dedicated team of strategists and analysts, we ensure your startup stands out and connects with capital that aligns with your growth path.
                     </p>
                   </div>
@@ -364,10 +368,10 @@ const ServicesSection = () => {
                         className="w-8 h-8 mt-1 flex-shrink-0"
                       />
                       <div className="flex flex-col gap-2 justify-start items-start flex-1">
-                        <h4 className="text-lg lg:text-xl font-poppins font-semibold leading-[28px] text-[#693795]">
+                        <h4 className="text-lg lg:text-xl font-poppins font-semibold leading-[28px] text-[#693795]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Venture Analyst
                         </h4>
-                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]">
+                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Refine your business documents and ensure compliance with our Venture Analyst.
                         </p>
                       </div>
@@ -380,10 +384,10 @@ const ServicesSection = () => {
                         className="w-8 h-8 mt-1 flex-shrink-0"
                       />
                       <div className="flex flex-col gap-2 justify-start items-start flex-1">
-                        <h4 className="text-lg lg:text-xl font-inter font-semibold leading-[28px] text-[#582591]">
+                        <h4 className="text-lg lg:text-xl font-inter font-semibold leading-[28px] text-[#582591]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Chief Financial Analyst
                         </h4>
-                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]">
+                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Get precise projections and add credibility to your valuation with support from our CFA.
                         </p>
                       </div>
@@ -396,10 +400,10 @@ const ServicesSection = () => {
                         className="w-8 h-8 mt-1 flex-shrink-0"
                       />
                       <div className="flex flex-col gap-2 justify-start items-start flex-1">
-                        <h4 className="text-lg lg:text-xl font-poppins font-semibold leading-[28px] text-[#582591]">
+                        <h4 className="text-lg lg:text-xl font-poppins font-semibold leading-[28px] text-[#582591]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Investment Banker
                         </h4>
-                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]">
+                        <p className="text-sm lg:text-base font-poppins font-normal leading-[22px] text-[#53535c]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                           Ensuring alignment with your goals, our investment bankers review terms and negotiate.
                         </p>
                       </div>

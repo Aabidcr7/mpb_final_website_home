@@ -1,219 +1,161 @@
 import React from 'react';
+import { Youtube, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="w-full bg-dark">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14">
-        <div className="py-12 lg:py-15">
-          <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-0">
-            {/* Main Content Container */}
-            <div className="w-full lg:w-[58%] mr-0 lg:mr-[22px]">
-              <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-0 w-full">
-                
-                {/* Brand Section */}
-                <div className="w-full lg:w-[20%]">
-                  <div className="flex flex-col gap-4 lg:gap-[22px] justify-center items-start">
-                    <div className="flex flex-col gap-3 lg:gap-4 justify-start items-start w-full">
-                      <img 
-                        src="/images/img_footer_logo.png" 
-                        alt="MyPitchDeck Footer Logo" 
-                        className="w-12 lg:w-14 h-12 lg:h-14"
-                      />
-                      <p className="text-sm lg:text-[15px] font-inter font-normal leading-[22px] text-white">
-                        Raise Funds like a PRO <br />with your ProBuddy
-                      </p>
-                    </div>
-                    
-                    {/* Social Media Links */}
-                    <div className="flex flex-row gap-3 lg:gap-4 justify-start items-center">
-                      <img 
-                        src="/images/img_link.svg" 
-                        alt="Social Link 1" 
-                        className="w-6 lg:w-[26px] h-6 lg:h-7"
-                      />
-                      <img 
-                        src="/images/img_link_light_blue_800.svg" 
-                        alt="Social Link 2" 
-                        className="w-5 lg:w-5 h-6 lg:h-7"
-                      />
-                      <img 
-                        src="/images/img_link_pink_500.svg" 
-                        alt="Social Link 3" 
-                        className="w-5 lg:w-5 h-6 lg:h-7"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Footer Links */}
-                <div className="w-full lg:w-[32%] flex flex-col sm:flex-row lg:flex-row justify-between items-start gap-8 lg:gap-0">
-                  
-                  {/* Services Column */}
-                  <div className="w-full sm:w-[48%] lg:w-[36%]">
-                    <div className="flex flex-col gap-3 lg:gap-3 justify-start items-start">
-                      <h3 className="text-base lg:text-[18px] font-inter font-medium leading-[23px] text-white">
-                        Services
-                      </h3>
-                      <ul className="flex flex-col gap-3 lg:gap-[14px] justify-start items-start">
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Debt Funding
-                          </a>
-                        </li>
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Grants
-                          </a>
-                        </li>
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Equity Funding
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Explore More Column */}
-                  <div className="w-full sm:w-[48%] lg:w-[36%]">
-                    <div className="flex flex-col gap-3 lg:gap-3 justify-start items-start">
-                      <h3 className="text-base lg:text-[18px] font-inter font-medium leading-[23px] text-white">
-                        Explore More
-                      </h3>
-                      <ul className="flex flex-col gap-3 lg:gap-[14px] justify-start items-start">
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Investor
-                          </a>
-                        </li>
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Partners
-                          </a>
-                        </li>
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Portfolio
-                          </a>
-                        </li>
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Grants AI Agent
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Company Column */}
-                  <div className="w-full sm:w-full lg:w-auto flex justify-center lg:justify-start">
-                    <div className="flex flex-col gap-3 lg:gap-3 justify-start items-center lg:items-start">
-                      <h3 className="text-base lg:text-[18px] font-inter font-medium leading-[23px] text-white">
-                        Company
-                      </h3>
-                      <ul className="flex flex-col justify-start items-start">
-                        <li>
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[19px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Home
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            About us
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Blogs
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Careers
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Contact
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Privacy Policy
-                          </a>
-                        </li>
-                        <li className="mt-3 lg:mt-[14px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[22px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Terms &
-                          </a>
-                        </li>
-                        <li className="mt-2 lg:mt-[8px]">
-                          <a 
-                            href="#" 
-                            className="text-sm lg:text-[14px] font-inter font-normal leading-[22px] text-white hover:text-primary-orange-1 transition-colors duration-200"
-                          >
-                            Conditions
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+    <footer className="bg-black text-white pt-16 pb-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          {/* Left section - Branding */}
+          <div className="md:col-span-1">
+            <div className="flex items-center mb-4">
+               <a href="https://myprobuddy.com" target="_blank" rel="noopener noreferrer">
+               <img 
+              src="/images/img_header_logo.png" 
+              alt="MyPitchDeck Logo" 
+              className="w-[150px] sm:w-[180px] lg:w-[230px] h-auto"
+            />
+               </a>
+              <div className="w-10 h-10 mr-3">
+               
+             
               </div>
             </div>
-          </div>
+            <h3 className="text-xl font-semibold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Raise Funds like a PRO<br />
+              with your ProBuddy
+            </h3>
+            
+            {/* Social Media Icons */}
+            <div className="flex space-x-4 mt-8">
+  <a
+    href="https://youtube.com/@myprobuddy?si=VKVR7TbVAB8Hc0uK"
+    className="hover:opacity-80 transition-opacity"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Youtube size={20} color="#FF0000" />
+  </a>
+  <a
+    href="https://www.linkedin.com/company/myprobuddy/"
+    className="hover:opacity-80 transition-opacity"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin size={20} color="#0077B5" />
+  </a>
+  <a
+    href="https://www.instagram.com/myprobuddy/"
+    className="hover:opacity-80 transition-opacity"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Instagram size={20} color="#E1306C" />
+  </a>
+</div>
 
-          {/* Divider Line */}
-          <div className="w-full h-[1px] bg-gray mt-12 lg:mt-[70px]"></div>
-
-          {/* Copyright */}
-          <div className="flex flex-row justify-center items-center w-full mt-3 lg:mt-3">
-            <p className="text-sm lg:text-[14px] font-inter font-normal leading-[18px] text-center text-white">
-              Copyright © MyProBuddy. 2025. All rights reserved.
-            </p>
           </div>
+          
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Services</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://debt.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Debt Funding
+                </a>
+              </li>
+              <li>
+                <a href="https://grants.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Grants
+                </a>
+              </li>
+              <li>
+                <a href="https://equity.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Equity Funding
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Explore More */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Explore More</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://investor.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Investor
+                </a>
+              </li>
+              <li>
+                <a href="https://partners.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Partners
+                </a>
+              </li>
+              <li>
+                <a href="https://portfolio.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="https://grants.myprobuddy.com/chatbot" className="text-gray-300 hover:text-white transition-colors">
+                  Grants AI Agent
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Company */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://www.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myprobuddy.com/about-us" className="text-gray-300 hover:text-white transition-colors">
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myprobuddy.com/founders-insights" className="text-gray-300 hover:text-white transition-colors">
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <a href="https://myprobuddy.zohorecruit.in/jobs/Careers" className="text-gray-300 hover:text-white transition-colors">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myprobuddy.com/contact-us" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myprobuddy.com/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="https://www.myprobuddy.com/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors">
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <hr className="border-gray-800 mb-8" />
+        
+        <div className="text-center">
+          <p className="text-gray-400 text-sm">
+            Copyright © MyProBuddy, {currentYear}. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

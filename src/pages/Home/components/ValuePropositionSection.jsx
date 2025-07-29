@@ -8,7 +8,7 @@ const ValuePropositionSection = () => {
               
               {/* Section Header */}
               <div className="text-center max-w-4xl">
-<h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" style={{ letterSpacing: '-2px' }}>
+<h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif'  }}>
   <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>Built for</span>
   <span className="text-[#fc5109]"> Founders, </span>
   <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>Backed by the</span>
@@ -30,10 +30,10 @@ const ValuePropositionSection = () => {
                   </div>
                   <div className="flex flex-col gap-8 justify-between items-start w-full bg-primary-purple-2 rounded-3xl p-8 flex-1">
                     <div>
-                      <h3 className="text-[22px] sm:text-[26px] lg:text-[28px] font-poppins font-semibold leading-[28px] sm:leading-[32px] lg:leading-[36px] text-white mb-4" style={{ letterSpacing: '-1px' }}>
+                      <h3 className="text-[22px] sm:text-[26px] lg:text-[28px] font-poppins font-semibold leading-[28px] sm:leading-[32px] lg:leading-[36px] text-white mb-4" style={{ letterSpacing: '-1px' ,fontFamily: 'Poppins, sans-serif' }}>
                         We work With You Until You Raise Capital
                       </h3>
-                      <p className="text-base font-poppins font-normal leading-[24px] text-[#f1f5f9]">
+                      <p className="text-base font-poppins font-normal leading-[24px] text-[#f1f5f9]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         Get a customised action plan to become investible
                       </p>
                     </div>
@@ -49,10 +49,10 @@ const ValuePropositionSection = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent rounded-3xl flex flex-col justify-between p-8">
-                      <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-poppins font-semibold leading-[28px] sm:leading-[30px] lg:leading-[32px] text-white" style={{ letterSpacing: '-1px' }}>
+                      <h3 className="text-[20px] sm:text-[22px] lg:text-[24px] font-poppins font-semibold leading-[28px] sm:leading-[30px] lg:leading-[32px] text-white" style={{ letterSpacing: '-1px' , fontFamily: 'Poppins, sans-serif' }}>
                         Become the founder investors cannot ignore.
                       </h3>
-                      <p className="text-base font-poppins font-normal leading-[24px] text-[#f1f5f9]">
+                      <p className="text-base font-poppins font-normal leading-[24px] text-[#f1f5f9]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         Our fundraising approach is built around your success, operating on a contingency basis with a 3–5% success fee.
                       </p>
                     </div>
@@ -63,10 +63,10 @@ const ValuePropositionSection = () => {
                 <div className="w-full lg:w-1/3 flex flex-col gap-6 justify-start items-center" data-aos="fade-down" data-aos-delay="0">
                   <div className="flex flex-col gap-8 justify-between items-start w-full bg-[#ff5216] rounded-3xl p-8 flex-1">
                     <div>
-                      <p className="text-base font-poppins font-normal leading-[24px] text-white mb-6">
+                      <p className="text-base font-poppins font-normal leading-[24px] text-white mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         We have built what founders need most a trusted mix of VCs, angels, HNIs, and family offices.
                       </p>
-                      <h3 className="text-[22px] sm:text-[26px] lg:text-[28px] font-poppins font-semibold leading-[28px] sm:leading-[32px] lg:leading-[36px] text-white" style={{ letterSpacing: '-1px' }}>
+                      <h3 className="text-[22px] sm:text-[26px] lg:text-[28px] font-poppins font-semibold leading-[28px] sm:leading-[32px] lg:leading-[36px] text-white" style={{ letterSpacing: '-1px'  , fontFamily: 'Poppins, sans-serif' }}>
                         558K+ Global Investor Network
                       </h3>
                     </div>

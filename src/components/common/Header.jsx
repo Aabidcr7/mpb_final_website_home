@@ -33,28 +33,34 @@ const Header = () => {
 
           {/* Navigation Menu */}
           <nav className={`${menuOpen ? 'block' : 'hidden'} lg:block w-full lg:w-auto order-3 lg:order-2`}>
-            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-9 py-4 lg:py-0 w-full lg:justify-start">
-              <button 
-                role="menuitem"
-                className="relative text-base sm:text-lg lg:text-[22px] font-poppins font-medium leading-[33px] text-primary transition-colors duration-200 hover:text-primary-purple-2 group"
-              >
-                Debt
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
-              </button>
-              <button 
-                role="menuitem"
-                className="relative text-base sm:text-lg lg:text-[22px] font-poppins font-medium leading-[33px] text-primary transition-colors duration-200 hover:text-primary-purple-2 group"
-              >
-                Equity
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
-              </button>
+            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-9 py-4 lg:py-0 w-full lg:justify-start"    style={{ fontFamily: 'Poppins, sans-serif' }}>
+             <a href="https://debt.myprobuddy.com" target="_blank" rel="noopener noreferrer">
+  <button 
+    role="menuitem"
+    className="relative text-base sm:text-lg lg:text-[22px] font-poppins font-medium leading-[33px] text-primary transition-colors duration-200 hover:text-primary-purple-2 group"
+  >
+    Debt
+    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
+  </button>
+</a>
+
+              <a href="https://equity.myprobuddy.com" target="_blank" rel="noopener noreferrer">
+  <button 
+    role="menuitem"
+    className="relative text-base sm:text-lg lg:text-[22px] font-poppins font-medium leading-[33px] text-primary transition-colors duration-200 hover:text-primary-purple-2 group"
+  >
+    Equity
+    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
+  </button>
+</a>
+              <a href="https://grants.myprobuddy.com" target="_blank" rel="noopener noreferrer">
               <button 
                 role="menuitem"
                 className="relative text-base sm:text-lg lg:text-[22px] font-poppins font-medium leading-[33px] text-primary transition-colors duration-200 hover:text-primary-purple-2 group"
               >
                 Grants
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
-              </button>
+              </button> </a>
               <Button
                 variant="orange"
                 size="medium"

@@ -24,30 +24,33 @@ const AcceleratorsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row justify-center items-start py-16 lg:py-[164px] gap-8 lg:gap-0">
           {/* Left Content */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8 justify-start items-start">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8 justify-start items-start" data-aos="fade-right" data-aos-duration="1000">
             <div className="flex flex-col gap-2 lg:gap-3 justify-start items-start w-full">
-              <h2
-                className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
-                style={{ letterSpacing: '-2px' }}
-              >
-                <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
-                  Accelerating Growth <br />
-                  through
-                </span>
-                <span className="text-[#f46d19]"> </span>
-                <span className="text-[#fc5109]">Incubators</span>
-                <span className="text-[#f46d19]"> </span>
-                <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
-                  &
-                </span>
-                <span className="text-[#f46d19]">
-                  {' '}
-                  <br />
-                </span>
-                <span className="text-[#fc5109]">Accelerators</span>
-              </h2>
-              <p className="text-lg lg:text-xl font-poppins font-normal leading-[26px] lg:leading-[32px] text-[#8a8a8a]">
-                We support incubation centers with our investor network <br />
+              <div className="flex w-full justify-center sm:block">
+                <h2
+                  className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6 text-center sm:text-left"
+                  style={{ letterSpacing: '-2px' , fontFamily: 'Poppins, sans-serif' }}
+                >
+                  <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
+                    Accelerating Growth <br />
+                    through
+                  </span>
+                  <span className="text-[#f46d19]"> </span>
+                  <span className="text-[#fc5109]">Incubators</span>
+                  <span className="text-[#f46d19]"> </span>
+                  <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
+                    &
+                  </span>
+                  <span className="text-[#f46d19]">
+                    {' '}
+                    <br />
+                  </span>
+                  <span className="text-[#fc5109]">Accelerators</span>
+                </h2>
+              </div>
+              <p className="text-base lg:text-xl font-poppins font-normal leading-[22px] lg:leading-[32px] text-[#8a8a8a]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                We support incubation centers with our investor network
+                <span className="hidden lg:inline"><br /></span>
                 and empower startups through collaborative workshops.
               </p>
             </div>
@@ -60,22 +63,22 @@ const AcceleratorsSection = () => {
                     <div className="flex flex-col items-start">
                       <h3
                         className="text-[27px] sm:text-[40px] lg:text-[54px] font-poppins font-bold leading-[40px] sm:leading-[60px] lg:leading-[81px] text-primary-purple-2"
-                        style={{ color: '#5d248f' }}
+                        style={{ color: '#5d248f' , fontFamily: 'Poppins, sans-serif' }}
                       >
                         25+
                       </h3>
-                      <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#3d495b] w-[136px] lg:w-[170px]">
+                      <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#3d495b] w-[136px] lg:w-[170px]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         Trusted accelerators <br />& incubators
                       </p>
                     </div>
                     <div className="flex flex-col items-start">
                       <h3
                         className="text-[27px] sm:text-[40px] lg:text-[54px] font-poppins font-bold leading-[40px] sm:leading-[60px] lg:leading-[81px] text-primary-purple-2"
-                        style={{ color: '#5d248f' }}
+                        style={{ color: '#5d248f' , fontFamily: 'Poppins, sans-serif' }}
                       >
                         200+
                       </h3>
-                      <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#3d495b]">
+                      <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#3d495b]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         NIRF standards & IIC accredited
                         <br />
                         Workshops
@@ -91,7 +94,7 @@ const AcceleratorsSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-5 justify-start items-start">
+          <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-5 justify-start items-start" data-aos="fade-left" data-aos-duration="1000">
             {/* Carousel with autoplay + manual */}
             <div className="w-full relative rounded-[16px] overflow-hidden">
               <img
@@ -118,15 +121,16 @@ const AcceleratorsSection = () => {
             </div>
 
             <div className="flex flex-col gap-2 lg:gap-[10px] justify-start items-start w-full bg-[#f8fafc] border border-solid border-[#dde5ed] rounded-[16px] p-5 lg:p-6">
-              <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#444444] ml-4 lg:ml-6">
+              <p className="text-sm lg:text-base font-poppins font-medium leading-[24px] text-[#444444] ml-4 lg:ml-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 Let us co-create the next generation of fundable startups.
               </p>
+                  <a href="https://partners.myprobuddy.com" target="_blank" rel="noopener noreferrer">
               <button
                 className="text-sm lg:text-base font-poppins font-semibold leading-[24px] text-center text-white px-6 py-2 rounded-[16px] bg-[#fc520c] shadow-md transition-all duration-200 hover:bg-[#d13e00] hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#fc520c] focus:ring-opacity-50"
-                type="button"
+                type="button" style={{ fontFamily: 'Poppins, sans-serif' }}
               >
                 Partner with Us
-              </button>
+              </button></a>
             </div>
           </div>
         </div>

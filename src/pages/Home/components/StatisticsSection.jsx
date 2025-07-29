@@ -53,7 +53,7 @@ const StatisticsSection = () => {
                 <h2
                   ref={headingRef}
                   className="text-[22px] sm:text-[32px] md:text-[38px] lg:text-[44px] font-poppins font-semibold leading-[33px] sm:leading-[48px] md:leading-[57px] lg:leading-[66px] min-h-[66px]"
-                  style={{ color: '#5d248f', whiteSpace: 'pre-line' }}
+                  style={{ color: '#5d248f', whiteSpace: 'pre-line' ,fontFamily: 'Poppins, sans-serif', letterSpacing: '-2px'}}     
                 >
                   Every 2 minutes, a founder is on a call with our experts.
                 </h2>
@@ -98,11 +98,11 @@ const StatisticsSection = () => {
           {/* Right Statistics Grid - Better Spacing */}
           <div className="w-full lg:w-[40%]" data-aos="fade-left" data-aos-delay="200">
             <div className="grid grid-cols-2 gap-8 lg:gap-10">
-              <div className="flex flex-col justify-start items-center lg:items-start text-center lg:text-left">
-                <h3 className="text-[32px] sm:text-[40px] lg:text-[48px] font-poppins font-medium leading-[48px] sm:leading-[60px] lg:leading-[73px] text-[#fa4300] mb-2">
+              <div className="flex flex-col justify-start items-center lg:items-start text-center lg:text-left" >
+                <h3 className="text-[32px] sm:text-[40px] lg:text-[48px] font-poppins font-medium leading-[48px] sm:leading-[60px] lg:leading-[73px] text-[#fa4300] mb-2" >
                   $250 Mn
                 </h3>
-                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]">
+                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]"  style={{ fontFamily: 'Poppins, sans-serif' }} >
                   Funds Raised
                 </p>
               </div>
@@ -111,7 +111,7 @@ const StatisticsSection = () => {
                 <h3 className="text-[32px] sm:text-[40px] lg:text-[48px] font-poppins font-medium leading-[48px] sm:leading-[60px] lg:leading-[73px] text-[#fa4300] mb-2">
                   215+
                 </h3>
-                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]">
+                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]"   style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Startups Funded
                 </p>
               </div>
@@ -120,7 +120,7 @@ const StatisticsSection = () => {
                 <h3 className="text-[32px] sm:text-[40px] lg:text-[48px] font-poppins font-medium leading-[48px] sm:leading-[60px] lg:leading-[73px] text-[#fa4300] mb-2">
                   3000+
                 </h3>
-                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]">
+                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Mentors & Industry Experts
                 </p>
               </div>
@@ -129,7 +129,7 @@ const StatisticsSection = () => {
                 <h3 className="text-[32px] sm:text-[40px] lg:text-[48px] font-poppins font-medium leading-[48px] sm:leading-[60px] lg:leading-[73px] text-[#fa4300] mb-2">
                   15000+
                 </h3>
-                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]">
+                <p className="text-sm lg:text-base font-poppins font-normal leading-[24px] text-[#575757]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Questions Answered
                 </p>
               </div>

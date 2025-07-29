@@ -60,10 +60,10 @@ const GetFundedSection = () => {
           will-change: transform;
         }
         .marquee-left {
-          animation: marquee-left 18s linear infinite;
+          animation: marquee-left 8s linear infinite;
         }
         .marquee-right {
-          animation: marquee-right 18s linear infinite;
+          animation: marquee-right 8s linear infinite;
         }
         @keyframes marquee-left {
           0% { transform: translateX(0); }
@@ -80,7 +80,7 @@ const GetFundedSection = () => {
           {/* Section Header */}
           <h2
             className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
-            style={{ letterSpacing: '-2px' }}
+            style={{ letterSpacing: '-2px'  , fontFamily: 'Poppins, sans-serif',textAlign: 'center' }}
           >
             <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
               Get
@@ -106,12 +106,12 @@ const GetFundedSection = () => {
               className="w-full lg:w-[346px] flex flex-col gap-6 lg:gap-7 justify-center items-center shadow-[-20px_10px_48px_#0f152214] bg-main rounded-[26px] p-6 lg:p-8"
             >
               <div className="flex flex-col gap-3 lg:gap-4 justify-start items-start w-full">
-                <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-poppins font-bold leading-[28px] sm:leading-[33px] lg:leading-[39px] text-[#582591]">
+                <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-poppins font-bold leading-[28px] sm:leading-[33px] lg:leading-[39px] text-[#582591]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   No debt. No <br />
                   dilution. Just <br />
                   growth.
                 </h3>
-                <p className="text-xs lg:text-xs font-poppins font-normal leading-[19px] text-[#52525b]">
+                <p className="text-xs lg:text-xs font-poppins font-normal leading-[19px] text-[#52525b]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   No matter what industry you are in, if your idea <br />
                   creates value or impact, there is likely a grant <br />
                   out there for you.
@@ -132,7 +132,7 @@ const GetFundedSection = () => {
   custom={2}
   className="w-full lg:w-[346px] flex flex-col gap-6 lg:gap-8 justify-center items-start bg-[#f9631c] rounded-[26px] p-6 lg:p-8 mb-12 lg:mb-[68px]"
 >
-  <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-jakarta font-extrabold leading-[28px] sm:leading-[33px] lg:leading-[39px] text-white ml-2 lg:ml-3 mb-8">
+  <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-jakarta font-extrabold leading-[28px] sm:leading-[33px] lg:leading-[39px] text-white ml-2 lg:ml-3 mb-8" style={{ fontFamily: 'Poppins, sans-serif' }}>
     Explore Top <br />
     Grants & Schemes
   </h3>
@@ -154,23 +154,24 @@ const GetFundedSection = () => {
               className="w-full lg:w-[520px] flex flex-col gap-6 lg:gap-8 justify-start items-center bg-[#582591] rounded-[26px] p-3 lg:p-3 mb-4 lg:mb-[22px]"
             >
               <div className="flex flex-col gap-3 lg:gap-[14px] justify-center items-start w-full lg:w-[86%] mt-6 lg:mt-[34px]">
-                <h3 className="text-[24px] sm:text-[28px] lg:text-[32px] font-jakarta font-extrabold leading-[33px] sm:leading-[38px] lg:leading-[44px] text-white">
+                <h3 className="text-[24px] sm:text-[28px] lg:text-[32px] font-jakarta font-extrabold leading-[33px] sm:leading-[38px] lg:leading-[44px] text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Know Your <br />
                   Grants for free
                 </h3>
-                <p className="text-sm lg:text-base font-poppins font-normal leading-[25px] text-white">
+                <p className="text-sm lg:text-base font-poppins font-normal leading-[25px] text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   You have the right to know and access free <br />
                   government grants that can benefit you.
                 </p>
               </div>
               <div className="flex flex-row justify-between items-start w-full lg:w-[86%]">
+                 <a href="https://grants.myprobuddy.com" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="primary"
                   size="medium"
                   className="text-sm lg:text-base font-jakarta font-bold leading-[21px] text-white bg-[#1c64f2] hover:bg-[#1c64f2] px-4 lg:px-[22px] py-3 lg:py-3 rounded-[10px] mt-6 lg:mt-7 transition-all duration-200"
                 >
                   Try For Free
-                </Button>
+                </Button></a>
                 <img
                   src="/images/img_icon_group.svg"
                   alt="Icon Group"
