@@ -122,7 +122,7 @@ const RecognitionSection = () => {
   {
     src: '/images/img_item_realm_rook.png',
     alt: 'Realm Rook Partner',
-    className: 'pt-2 w-[140px] h-[100px] lg:w-[210px] lg:h-[106px]',
+    className: 'pt-2 w-[140px] h-[100px] lg:w-[210px] lg:h-[140px]',
   },
   {
     src: '/images/img_item_prudent_capital.png',
@@ -147,7 +147,7 @@ const RecognitionSection = () => {
   {
     src: '/images/37.png',
     alt: 'Partner Logo',
-    className: 'w-[120px] h-[80px] lg:w-[170px] lg:h-[106px]',
+    className: 'w-[120px] h-[80px] lg:w-[170px] lg:h-[90px]',
   },
   {
     src: '/images/38.png',

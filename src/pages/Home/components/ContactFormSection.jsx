@@ -62,16 +62,16 @@ const ContactFormSection = () => {
     }
   };
   return (
-    <section className="w-full relative overflow-hidden">
+    <section id="contact-form-section" className="w-full relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
       </div>
 
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative">
-        <div className="flex flex-col lg:flex-row justify-between items-center py-8 lg:py-24 gap-6 lg:gap-16">
+        <div className="flex flex-col lg:flex-row justify-between items-center py-20 lg:py-24 gap-12 lg:gap-16">
           {/* Left Content - Call to Action */}
-          <div className="w-full lg:w-[45%] flex flex-col gap-2 lg:gap-8 justify-start items-start text-center lg:text-left">
+          <div className="w-full lg:w-[45%] flex flex-col gap-6 lg:gap-8 justify-start items-start text-center lg:text-left">
             <div className="flex flex-col gap-0 lg:gap-3">
               <h2
                 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-0 sm:mb-2 lg:mb-3"

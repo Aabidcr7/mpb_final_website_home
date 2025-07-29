@@ -61,6 +61,8 @@ const Header = () => {
                 Grants
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
               </button> </a>
+
+                    <a href="#contact-form-section">
               <Button
                 variant="orange"
                 size="medium"
@@ -68,6 +70,7 @@ const Header = () => {
               >
                 Get started
               </Button>
+              </a>
             </div>
             
           </nav>

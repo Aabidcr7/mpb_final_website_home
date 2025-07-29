@@ -117,7 +117,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/about-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/about-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   About us
                 </a>
               </li>

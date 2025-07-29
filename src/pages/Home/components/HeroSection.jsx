@@ -27,15 +27,17 @@ const HeroSection = () => {
 
 
           {/* CTA Button */}
-          <Button
-            variant="orange"
-            size="large"
-            className="mt-6 lg:mt-8 text-lg lg:text-[24px] font-poppins font-bold leading-[28px] text-white bg-[#fd421d] hover:bg-[#fc520c] px-4 lg:px-[14px] py-1 lg:py-1 rounded-[20px] shadow-[0px_30px_30px_#0000000c] transition-all duration-200 transform hover:scale-105 hover:brightness-110"
-            data-aos="fade-up"
-            data-aos-delay="200"
-             style={{ fontFamily: 'Poppins, sans-serif' }}>
-            Get Started Today
-          </Button>
+          <a href="#contact-form-section">
+            <Button
+              variant="orange"
+              size="large"
+              className="mt-6 lg:mt-8 text-lg lg:text-[24px] font-poppins font-bold leading-[28px] text-white bg-[#fd421d] hover:bg-[#fc520c] px-4 lg:px-[14px] py-1 lg:py-1 rounded-[20px] shadow-[0px_30px_30px_#0000000c] transition-all duration-200 transform hover:scale-105 hover:brightness-110"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Get Started Today
+            </Button>
+          </a>
         </div>
       </div>
     </section>

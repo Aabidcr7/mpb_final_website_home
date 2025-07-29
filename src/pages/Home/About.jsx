@@ -308,19 +308,22 @@ const About = () => {
               </div>
 
               {/* CTA Button */}
-              <Button
-                variant="primary"
-                size="medium"
-                rightIcon={{
-                  src: "/images/img_primary.svg",
-                  width: 22,
-                  height: 24
-                }}
-                className="gap-2 rounded-[12px] px-[26px] sm:px-[36px] md:px-[48px] py-3 md:py-[12px] text-[14px] sm:text-[15px] md:text-[16px] font-poppins font-medium leading-[20px] sm:leading-[22px] md:leading-[24px]"
-                style={{ color: '#fff', background: '#ef3e25' }}
-              >
-                Get Started
-              </Button>
+              
+              <a href="/">
+                <Button
+                  variant="primary"
+                  size="medium"
+                  rightIcon={{
+                    src: "/images/img_primary.svg",
+                    width: 22,
+                    height: 24
+                  }}
+                  className="gap-2 rounded-[12px] px-[26px] sm:px-[36px] md:px-[48px] py-3 md:py-[12px] text-[14px] sm:text-[15px] md:text-[16px] font-poppins font-medium leading-[20px] sm:leading-[22px] md:leading-[24px]"
+                  style={{ color: '#fff', background: '#ef3e25' }}
+                >
+                  Get Started
+                </Button>
+              </a>
             </div>
           </div>
         </div>
