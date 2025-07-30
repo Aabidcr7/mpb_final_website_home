@@ -63,14 +63,14 @@ const Header = () => {
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-primary-purple-2 transition-all duration-300 group-hover:w-full"></span>
               </button> </a>
 
-                    <a href="#contact-form-section">
-              <Button
-                variant="orange"
-                size="medium"
-                className="w-full sm:w-auto text-sm lg:text-base font-jakarta font-bold leading-[21px] text-white bg-btn-orange-1 hover:bg-primary-orange-2 px-4 lg:px-[22px] py-3 lg:py-3 rounded-[10px] transition-all duration-200 transform hover:scale-105 hover:brightness-110"
-              >
-                Get started
-              </Button>
+              <a href="/get-started">
+                <Button
+                  variant="orange"
+                  size="medium"
+                  className="w-full sm:w-auto text-sm lg:text-base font-jakarta font-bold leading-[21px] text-white bg-btn-orange-1 hover:bg-primary-orange-2 px-4 lg:px-[22px] py-3 lg:py-3 rounded-[10px] transition-all duration-200 transform hover:scale-105 hover:brightness-110"
+                >
+                  Get started
+                </Button>
               </a>
             </div>
             

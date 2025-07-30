@@ -342,6 +342,7 @@ const About = () => {
               </div>
 
               {/* CTA Button */}
+              <a href="/get-started">
               <Button
                 variant="primary"
                 size="medium"
@@ -354,7 +355,7 @@ const About = () => {
                 style={{ color: '#fff', background: '#ef3e25', fontFamily: 'Poppins, sans-serif' }}
               >
                 Get Started
-              </Button>
+              </Button></a>
             </div>
           </div>
         </div>
