@@ -1,4 +1,45 @@
+// Vision and Mission SVGs
+const VisionIcon = () => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="14" fill="#5d248f" />
+    <path d="M14 8c-4 0-7 3.5-7 6s3 6 7 6 7-3.5 7-6-3-6-7-6zm0 9.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="#fff"/>
+    <circle cx="14" cy="14" r="2" fill="#5d248f" />
+  </svg>
+);
+const MissionIcon = () => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="14" fill="#5d248f" />
+    <path d="M14 8v8l5 3" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 import React, { useState, useEffect } from 'react';
+
+// SVG ICONS
+const InvestorReadyIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="16" fill="#5d248f" />
+    <path d="M10 16l4 4 8-8" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+const AccessCapitalIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" rx="8" fill="#5d248f" />
+    <path d="M16 10v12M10 16h12" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"/>
+  </svg>
+);
+const SupportInfraIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="8" width="24" height="16" rx="4" fill="#5d248f" />
+    <circle cx="16" cy="16" r="3" fill="#fff" />
+  </svg>
+);
+const RegulatoryEdgeIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" rx="16" fill="#5d248f" />
+    <path d="M10 22V12l6-4 6 4v10" stroke="#fff" strokeWidth="2.5" strokeLinejoin="round" fill="none"/>
+    <rect x="13" y="16" width="6" height="6" rx="1" fill="#fff" />
+  </svg>
+);
 import Button from '@/components/ui/Button';
 import ChipView from '@/components/ui/ChipView';
 import Footer from '@/components/common/Footer';
@@ -33,10 +74,10 @@ const About = () => {
   }, []);
   const chipItems = [
     'Investor-Ready',
-    'Mentorship', 
+    'Mentorship',
     'Network Access',
     'Valuation Support',
-    'Credibility Boost'
+    'Credibility Boost',
   ];
 
   const impactStats = [
@@ -45,94 +86,97 @@ const About = () => {
       suffix: 'CR',
       plus: '+',
       label: 'Fund Raised',
-      image: '/images/img_jkvlzyitdnjgyuz.png'
+      image: '/images/img_jkvlzyitdnjgyuz.png',
     },
     {
       number: '215',
       suffix: '',
       plus: '+',
       label: 'Startups Funded',
-      image: '/images/img_jkvlzyitdnjgyuz.png'
+      image: '/images/img_jkvlzyitdnjgyuz.png',
     },
     {
       number: '500',
       suffix: '',
       plus: '+',
       label: 'Industry Mentors',
-      image: '/images/img_jkvlzyitdnjgyuz.png'
+      image: '/images/img_jkvlzyitdnjgyuz.png',
     },
     {
       number: '7',
       suffix: '',
       plus: '+',
       label: 'Years of experience',
-      image: '/images/img_jkvlzyitdnjgyuz.png'
-    }
+      image: '/images/img_jkvlzyitdnjgyuz.png',
+    },
   ];
 
   const services = [
     {
-      icon: '/images/img_icon_wrap_gray_100.png',
+      icon: <InvestorReadyIcon />, // inline SVG for Investor-Ready Advisory
       title: 'Investor-Ready Advisory',
-      description: 'From refining your business plan to assessing your valuation, we ensure you are presenting your startup in the best possible light.'
+      description:
+        'From refining your business plan to assessing your valuation, we ensure you are presenting your startup in the best possible light.',
     },
     {
-      icon: '/images/img_icon_wrap_gray_100.png',
+      icon: <AccessCapitalIcon />, // inline SVG for Access to Capital
       title: 'Access to Capital',
-      description: 'Connect with over 558,000+ investors—including VCs, angels, HNIs, CSR funds, and impact investors.'
+      description:
+        'Connect with over 558,000+ investors—including VCs, angels, HNIs, CSR funds, and impact investors.',
     },
     {
-      icon: '/images/img_icon_wrap_gray_100.png',
+      icon: <SupportInfraIcon />, // inline SVG for Smart Support Infrastructure
       title: 'Smart Support Infrastructure',
-      description: 'We provide resources like Virtual Data Rooms, mock pitches, and credibility-building strategies to accelerate your fundraising journey.'
+      description:
+        'We provide resources like Virtual Data Rooms, mock pitches, and credibility-building strategies to accelerate your fundraising journey.',
     },
     {
-      icon: '/images/img_icon_wrap_gray_100.png',
+      icon: <RegulatoryEdgeIcon />, // inline SVG for Regulatory Edge
       title: 'Regulatory Edge',
-      description: 'Benefit from guidance on DPIIT registration, Angel Tax exemptions, and other startup-friendly policies.'
-    }
+      description:
+        'Benefit from guidance on DPIIT registration, Angel Tax exemptions, and other startup-friendly policies.',
+    },
   ];
 
   const fundingTypes = [
     { icon: '/images/img_icon_wrap.png', label: 'Debt' },
     { icon: '/images/img_icon_wrap.png', label: 'Grants' },
-    { icon: '/images/img_icon_wrap.png', label: 'Equity' }
+    { icon: '/images/img_icon_wrap.png', label: 'Equity' },
   ];
 
   return (
-    <div className="flex flex-col justify-start items-center w-full bg-global-3 overflow-y-auto" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div
+      className="flex flex-col justify-start items-center w-full bg-global-3 overflow-y-auto"
+      style={{ fontFamily: 'Poppins, sans-serif' }}
+    >
       <Header />
       {/* Hero Section */}
       <section className="w-full bg-global-3" data-aos="fade-up" data-aos-duration="1000">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px] pt-[81px] sm:pt-[120px] md:pt-[140px] lg:pt-[162px]">
-          <div className="flex flex-col gap-6 sm:gap-8 md:gap-[36px] justify-start items-center w-full">
+        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px] pt-[60px] sm:pt-[80px] md:pt-[100px] lg:pt-[140px]">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center items-center w-full">
             {/* Hero Content */}
-            <div className="flex flex-col justify-start items-center w-full max-w-[726px]">
-              <h1 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6 text-center"
-  style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }} >
-                <span className="text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}>Empowering Entrepreneurs</span>
-                <span className="text-global-1" style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}> </span>
-                <br className="sm:hidden" />
-                <span className="text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}>to</span>
-                <span className="text-global-1" style={{ fontFamily: 'Poppins, sans-serif' }}> </span>
-                <span className="text-[#fc5109]" style={{ fontFamily: 'Poppins, sans-serif' }}>Raise Funds Like a Pro</span>
+            <div className="flex flex-col justify-center items-center w-full max-w-[700px] text-center">
+              <h1 className="text-[22px] sm:text-[32px] md:text-[40px] lg:text-[50px] font-poppins font-medium leading-tight mb-4 sm:mb-6" style={{ letterSpacing: '-1px', fontFamily: 'Poppins' }}>
+                <span className="block text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins' }}>Empowering Entrepreneurs</span>
+                <span className="block text-[#fc5109]">to Raise Funds Like a Pro</span>
               </h1>
-              
-              <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center text-global-6 mt-3 sm:mt-4 md:mt-[18px] max-w-[600px]">
-                At MyProBuddy, we turn visionary founders into investable ventures through expert guidance and strategic support. We are with you every step of the way until you raise funds successfully.
+
+              <p className="text-[14px] sm:text-[16px] md:text-[18px] font-poppins font-normal leading-relaxed text-global-6 max-w-[500px]">
+                At MyProBuddy, we turn visionary founders into investable ventures through expert
+                guidance and strategic support.
               </p>
             </div>
 
             {/* Funding Types */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-[20px] justify-center items-center w-full sm:w-auto">
+            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 w-full">
               {fundingTypes.map((type, index) => (
-                <div key={index} className="flex gap-2 sm:gap-[10px] justify-center items-center w-auto">
-                  <img 
-                    src={type.icon} 
+                <div key={index} className="flex items-center gap-2">
+                  <img
+                    src={type.icon}
                     alt={`${type.label} icon`}
-                    className="w-[24px] sm:w-[30px] h-[24px] sm:h-[30px] rounded-[11px] sm:rounded-[14px]"
+                    className="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px] rounded-lg"
                   />
-                  <span className="text-[15px] sm:text-[17px] font-urbanist font-medium leading-[18px] sm:leading-[21px] text-global-1">
+                  <span className="text-[12px] sm:text-[14px] font-urbanist font-medium text-global-1">
                     {type.label}
                   </span>
                 </div>
@@ -143,45 +187,104 @@ const About = () => {
       </section>
 
       {/* What Sets Us Apart Section */}
-      <section className="w-full mt-[86px] sm:mt-[130px] md:mt-[150px] lg:mt-[172px]" data-aos="fade-up" data-aos-duration="1000">
+      <section
+        className="w-full mt-12 sm:mt-16 md:mt-20 lg:mt-24"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
-          <div className="flex flex-col lg:flex-row justify-center items-center w-full max-w-[1232px] mx-auto">
-            <div className="flex flex-col lg:flex-row justify-start items-start w-full gap-8 lg:gap-0">
-              {/* Left Content */}
-              <div className="flex flex-col justify-start items-start w-full lg:w-1/2">
-                <h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6 text-left" style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }} >
-                  <span className="text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}>What Sets Us</span>
-                  <span className="text-global-1" style={{ fontFamily: 'Poppins, sans-serif' }}> </span>
-                  <span className="text-[#fc5109]" style={{ fontFamily: 'Poppins, sans-serif' }}>Apart</span>
-                </h2>
-                
-                <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-left text-global-6 mt-1 sm:mt-2 md:mt-[6px] max-w-[500px]">
-                  We turn startups into compelling investment opportunities through market insight, investor access, and hands-on support.
-                </p>
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-[1200px] mx-auto">
+            {/* Left Content */}
+            <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
+              <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-poppins font-medium leading-tight" style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                <span className="block text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins' }} >What Sets Us</span>
+                <span className="block text-[#fc5109]">Apart</span>
+              </h2>
 
-                {/* Chip View */}
-                <div className="mt-6 sm:mt-8 md:mt-[42px] w-full">
-                  <ChipView items={chipItems} />
-                </div>
+              <p className="text-[14px] sm:text-[16px] md:text-[18px] text-global-6 max-w-[500px]">
+                We turn startups into compelling investment opportunities through market insight,
+                investor access, and hands-on support.
+              </p>
+
+              <div className="mt-4 sm:mt-6 md:mt-8">
+                <ChipView items={chipItems} />
               </div>
+            </div>
 
-              {/* Right Content - Services */}
-              <div className="flex flex-col gap-8 sm:gap-10 md:gap-[52px] w-full lg:w-1/2 lg:self-center lg:mt-[6px]">
-                {services.map((service, index) => (
-                  <div key={index} className="flex flex-col gap-3 sm:gap-4 md:gap-[16px] justify-start items-center w-full">
-                    <div className="flex justify-start items-center w-full">
-                      <img 
-                        src={service.icon} 
-                        alt={`${service.title} icon`}
-                        className="w-[38px] sm:w-[42px] md:w-[46px] h-[38px] sm:h-[42px] md:h-[46px] rounded-[18px] sm:rounded-[20px] md:rounded-[22px]"
-                      />
-                      <h3 className="text-[20px] sm:text-[22px] md:text-[24px] font-poppins font-medium leading-[24px] sm:leading-[26px] md:leading-[28px] text-left text-global-1 ml-3 sm:ml-4 md:ml-[16px] flex-1">
-                        {service.title}
-                      </h3>
+            {/* Right Content - Services */}
+            <div className="w-full lg:w-1/2 space-y-6 sm:space-y-8">
+              {services.map((service, index) => (
+                <div key={index} className="flex flex-col gap-3">
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="w-[44px] h-[44px] sm:w-[52px] sm:h-[52px] flex items-center justify-center rounded-full bg-white shadow-md"
+                    >
+                      <span className="w-[22px] h-[22px] sm:w-[28px] sm:h-[28px] flex items-center justify-center">
+                        {service.icon}
+                      </span>
+                    </span>
+                    <h3 className="text-[18px] sm:text-[22px] font-poppins font-medium text-global-1">
+                      {service.title}
+                    </h3>
+                  </div>
+                  <p className="text-[14px] sm:text-[16px] text-global-6">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Impact Section */}
+      <section className="w-full mt-12 sm:mt-16 md:mt-20 lg:mt-24">
+        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
+          <div className="max-w-[1000px] mx-auto space-y-6">
+            {/* Section Header */}
+            <div className="text-center space-y-4">
+              <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-poppins font-medium leading-tight"style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                <span className="block text-global-4" style={{ color: '#5d248f', fontFamily: 'Poppins' }}>Our Impact at a</span>
+                <span className="block text-[#fc5109]">Glance</span>
+              </h2>
+              <p className="text-[14px] sm:text-[16px] md:text-[18px] text-global-6 max-w-[600px] mx-auto">
+                We fuel startup growth with expert leadership and strategic support, driving success
+                through experience and innovation.
+              </p>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="bg-white border rounded-2xl p-4 sm:p-6 md:p-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                {impactStats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="relative overflow-hidden rounded-xl"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay={index * 120}
+                  >
+                    <img
+                      src={stat.image}
+                      alt={`${stat.label} background`}
+                      className="w-full h-[120px] sm:h-[160px] md:h-[180px] object-cover rounded-xl"
+                    />
+                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-2">
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-[28px] sm:text-[36px] md:text-[44px] font-inter font-medium text-global-2">
+                          <Counter end={parseInt(stat.number)} />
+                        </span>
+                        {stat.suffix && (
+                          <span className="text-[18px] sm:text-[24px] font-inter font-medium text-global-2">
+                            {stat.suffix}
+                          </span>
+                        )}
+                        <span className="text-[24px] sm:text-[32px] md:text-[40px] font-inter font-medium text-global-2">
+                          {stat.plus}
+                        </span>
+                      </div>
+                      <span className="text-[12px] sm:text-[14px] md:text-[16px] font-poppins font-medium text-global-3">
+                        {stat.label}
+                      </span>
                     </div>
-                    <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-left text-global-6 w-full">
-                      {service.description}
-                    </p>
                   </div>
                 ))}
               </div>
@@ -190,126 +293,65 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Impact Section */}
-      <section className="w-full mt-[85px] sm:mt-[125px] md:mt-[150px] lg:mt-[170px]">
-        <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
-          <div className="flex justify-center items-center w-full">
-            <div className="flex flex-col justify-start items-center w-full max-w-[1056px]">
-              {/* Section Header */}
-              <div className="flex flex-col justify-start items-center w-full max-w-[612px] mx-auto">
-                <h2 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6  text-center" style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }}>
-                  <span className="text-global-4"  style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}>Our Impact at a </span>
-                  <span className="text-[#fc5109]" style={{ fontFamily: 'Poppins, sans-serif' }}>Glance</span>
-                </h2>
-                <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center text-global-6 mt-[-5px] sm:mt-[-8px] md:mt-[-10px]">
-                  We fuel startup growth with expert leadership and strategic support,
-                </p>
-              </div>
-              
-              <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center text-global-6">
-                driving success through experience and innovation.
-              </p>
-
-              {/* Stats Grid */}
-              <div className="w-full bg-white border border-white rounded-[20px] sm:rounded-[25px] md:rounded-[30px] p-4 sm:p-5 md:p-[20px] mt-4 sm:mt-6 md:mt-[20px]">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-[20px] w-full">
-                  {impactStats.map((stat, index) => (
-                    <div
-                      key={index}
-                      className="relative w-full"
-                      data-aos="fade-right"
-                      data-aos-duration="1000"
-                      data-aos-delay={index * 120}
-                    >
-                      <img 
-                        src={stat.image} 
-                        alt={`${stat.label} background`}
-                        className="w-full h-[140px] sm:h-[160px] md:h-[176px] object-cover rounded-[16px] sm:rounded-[18px] md:rounded-[20px]"
-                      />
-                      <div className="absolute inset-0 flex flex-col gap-1 sm:gap-[6px] justify-center items-center w-full px-4 sm:px-6 md:px-[42px]">
-                        <div className="flex justify-center items-center w-auto gap-1 sm:gap-2">
-                          <span className="text-[39px] sm:text-[44px] md:text-[49px] font-inter font-medium leading-[48px] sm:leading-[54px] md:leading-[60px] text-global-2">
-                            <Counter end={parseInt(stat.number)} />
-                          </span>
-                          {stat.suffix && (
-                            <span className="text-[23px] sm:text-[26px] md:text-[29px] font-inter font-medium leading-[28px] sm:leading-[32px] md:leading-[36px] text-center text-global-2">
-                              {stat.suffix}
-                            </span>
-                          )}
-                          <span className="text-[40px] sm:text-[45px] md:text-[50px] font-inter font-medium leading-[49px] sm:leading-[55px] md:leading-[61px] text-center text-global-2">
-                            {stat.plus}
-                          </span>
-                        </div>
-                        <span className="text-[16px] sm:text-[17px] md:text-[18px] font-poppins font-medium leading-[22px] sm:leading-[25px] md:leading-[27px] text-center text-global-3">
-                          {stat.label}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Vision & Mission Section */}
-      <section className="w-full bg-global-2 mt-[85px] sm:mt-[125px] md:mt-[150px] lg:mt-[170px] py-[60px] sm:py-[70px] md:py-[82px]">
+      <section className="w-full bg-global-2 py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
-          <div className="flex flex-col gap-8 sm:gap-10 md:gap-[56px] justify-start items-center w-full">
+          <div className="space-y-8 sm:space-y-10 md:space-y-12 max-w-[1200px] mx-auto">
             {/* Section Header */}
-            <div className="flex flex-col justify-center items-center w-full max-w-[1232px]">
-              <h2  className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6" 
-  style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }}>
-                <span className="text-global-5" style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}>Fueling Startup Success with</span>
-                <span className="text-global-1" style={{ fontFamily: 'Poppins, sans-serif' }}> </span>
-                <span className="text-[#fc5109]" style={{ fontFamily: 'Poppins, sans-serif' }}>Purpose</span>
+            <div className="text-center space-y-4">
+              <h2 className="text-[24px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-poppins font-medium leading-tight" style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                <span className="block text-global-5" style={{ color: '#5d248f', fontFamily: 'Poppins' }}>Fueling Startup Success with</span>
+                <span className="block text-[#fc5109]">Purpose</span>
               </h2>
-              <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center text-global-7 mt-1 sm:mt-2 md:mt-[6px]">
-                At MyProBuddy, we empower founders to become investment-ready
-              </p>
-              <p className="text-[16px] sm:text-[18px] font-poppins font-normal leading-[24px] sm:leading-[27px] text-center text-global-7">
-                through mentorship, strategy, and investor access.
+              <p className="text-[14px] sm:text-[16px] md:text-[18px] text-global-7 max-w-[600px] mx-auto">
+                At MyProBuddy, we empower founders to become investment-ready through mentorship,
+                strategy, and investor access.
               </p>
             </div>
 
             {/* Vision & Mission Cards */}
-            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-[32px] justify-center items-start w-full max-w-[1232px] mb-6 sm:mb-8 md:mb-[36px]">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
               {/* Vision Card */}
-              <div className="flex justify-start items-center w-full bg-global-5 rounded-[24px] sm:rounded-[28px] md:rounded-[30px] shadow-[0px_5px_20px_#00000011] transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-left" data-aos-duration="1000">
-                <div className="flex flex-col gap-4 sm:gap-5 md:gap-[22px] justify-center items-start w-full border border-[#f3f3f1] rounded-[22px] sm:rounded-[26px] md:rounded-[28px] bg-[linear-gradient(180deg,#ffffff_0%,_#f6f4f2_100%)] p-6 sm:p-8 md:p-[34px_38px]">
-                  <img 
-                    src="/images/img_image_text_image.png" 
-                    alt="Vision icon"
-                    className="w-[48px] sm:w-[54px] md:w-[60px] h-[48px] sm:h-[54px] md:h-[60px] rounded-[24px] sm:rounded-[27px] md:rounded-[30px]"
-                  />
-                  <div className="flex flex-col gap-2 sm:gap-[10px] justify-start items-start w-full">
-                    <h3 className="text-[20px] sm:text-[22px] md:text-[24px] font-urbanist font-semibold leading-[24px] sm:leading-[27px] md:leading-[29px] text-left text-global-1">
-                      Our Vision
-                    </h3>
-                    <p className="text-[16px] sm:text-[18px] font-inter font-normal leading-[24px] sm:leading-[27px] text-left text-global-6">
-                      To democratize access to startup funding across India by making every founder truly investment-ready.
-                    </p>
-                  </div>
+              <div
+                className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div className="flex flex-col items-start gap-2">
+                  <span className="w-[38px] h-[38px] sm:w-[44px] sm:h-[44px] flex items-center justify-center rounded-full bg-white shadow-md mb-2">
+                    <span className="w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] flex items-center justify-center">
+                      <VisionIcon />
+                    </span>
+                  </span>
+                  <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-urbanist font-semibold">
+                    Our Vision
+                  </h3>
+                  <p className="text-[14px] sm:text-[16px] md:text-[18px] text-global-6">
+                    To democratize access to startup funding across India by making every founder
+                    truly investment-ready.
+                  </p>
                 </div>
               </div>
 
               {/* Mission Card */}
-              <div className="flex justify-start items-center w-full bg-global-4 rounded-[24px] sm:rounded-[28px] md:rounded-[30px] shadow-[0px_5px_20px_#00000011] lg:self-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-right" data-aos-duration="1000">
-                <div className="flex flex-col gap-4 sm:gap-5 md:gap-[20px] justify-center items-start w-full border border-[#f3f3f1] rounded-[22px] sm:rounded-[26px] md:rounded-[28px] bg-[linear-gradient(180deg,#ffffff_0%,_#f6f4f2_100%)] p-6 sm:p-8 md:p-[34px_38px]">
-                  <img 
-                    src="/images/img_image_text_image.png" 
-                    alt="Mission icon"
-                    className="w-[48px] sm:w-[54px] md:w-[60px] h-[48px] sm:h-[54px] md:h-[60px] rounded-[24px] sm:rounded-[27px] md:rounded-[30px]"
-                  />
-                  <div className="flex flex-col gap-2 sm:gap-[10px] justify-start items-start w-full">
-                    <h3 className="text-[20px] sm:text-[22px] md:text-[24px] font-urbanist font-semibold leading-[24px] sm:leading-[27px] md:leading-[29px] text-left text-global-1">
-                      Our Mission
-                    </h3>
-                    <p className="text-[16px] sm:text-[18px] font-inter font-normal leading-[24px] sm:leading-[27px] text-left text-global-6">
-                      To support entrepreneurs with mentorship, strategic guidance, and investor connections that lead to successful fundraises.
-                    </p>
-                  </div>
+              <div
+                className="bg-white rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <div className="flex flex-col items-start gap-2">
+                  <span className="w-[38px] h-[38px] sm:w-[44px] sm:h-[44px] flex items-center justify-center rounded-full bg-white shadow-md mb-2">
+                    <span className="w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] flex items-center justify-center">
+                      <MissionIcon />
+                    </span>
+                  </span>
+                  <h3 className="text-[18px] sm:text-[22px] md:text-[24px] font-urbanist font-semibold">
+                    Our Mission
+                  </h3>
+                  <p className="text-[14px] sm:text-[16px] md:text-[18px] text-global-6">
+                    To support entrepreneurs with mentorship, strategic guidance, and investor
+                    connections that lead to successful fundraises.
+                  </p>
                 </div>
               </div>
             </div>
@@ -318,49 +360,44 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full mt-[45px] sm:mt-[65px] md:mt-[80px] lg:mt-[90px]">
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[56px]">
-          <div className="flex justify-center items-center w-full max-w-[1232px] mx-auto">
-            <div
-              className="flex flex-col gap-6 sm:gap-8 md:gap-[38px] justify-center items-center w-full rounded-[18px] sm:rounded-[20px] md:rounded-[22px] py-[60px] sm:py-[70px] md:py-[80px]"
-              style={{ background: '#5d248f' }}
-            >
-              {/* CTA Content */}
-              <div className="flex flex-col gap-3 sm:gap-4 md:gap-[18px] justify-start items-center w-full px-4 sm:px-6 lg:px-[56px]">
-                <div className="flex flex-col justify-start items-center w-full max-w-[700px]">
-                  <h2 className="text-[28px] sm:text-[35px] md:text-[38px] lg:text-[41px] font-poppins font-medium leading-[34px] sm:leading-[42px] md:leading-[46px] lg:leading-[49px] text-center" style={{ color: '#fff', letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }}>
-                    we do not just believe in your <span className="text-[#ef3e25]" style={{ fontFamily: 'Poppins, sans-serif' }}>vision</span>
-                  </h2>
-                  <h2 className="text-[28px] sm:text-[35px] md:text-[38px] lg:text-[41px] font-poppins font-medium leading-[34px] sm:leading-[42px] md:leading-[46px] lg:leading-[49px] text-center" style={{ color: '#fff', letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }}>
-                     <span style={{ fontFamily: 'Poppins, sans-serif' }}>we help you prove it to the </span>
-                     <span className="text-[#ef3e25]" style={{ fontFamily: 'Poppins, sans-serif' }}>world</span>
-                  </h2>
-                </div>
-                <p className="text-[16px] sm:text-[18px] font-manrope font-normal leading-[22px] sm:leading-[25px] text-center" style={{ color: '#fff', fontFamily: 'Poppins, sans-serif' }}>
+          <div className="max-w-[1000px] mx-auto">
+            <div className="bg-[#5d248f] rounded-2xl p-8 sm:p-12 md:p-16 text-center space-y-6">
+              <div className="space-y-4">
+                <h2 className="text-[22px] sm:text-[32px] md:text-[38px] lg:text-[42px] font-poppins font-medium text-white leading-tight" style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                  we do not just believe in your <span className="text-[#ef3e25]">vision</span>
+                </h2>
+                <h2 className="text-[22px] sm:text-[32px] md:text-[38px] lg:text-[42px] font-poppins font-medium text-white leading-tight" style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                  we help you prove it to the <span className="text-[#ef3e25]">world</span>
+                </h2>
+
+                <p className="text-[14px] sm:text-[16px] md:text-[18px] text-white">
                   Let us raise funds like a pro.
                 </p>
               </div>
 
               {/* CTA Button */}
               <a href="/get-started">
-              <Button
-                variant="primary"
-                size="medium"
-                rightIcon={{
-                  src: "/images/img_primary.svg",
-                  width: 22,
-                  height: 24
-                }}
-                className="gap-2 rounded-[12px] px-[26px] sm:px-[36px] md:px-[48px] py-3 md:py-[12px] text-[14px] sm:text-[15px] md:text-[16px] font-poppins font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-                style={{ color: '#fff', background: '#ef3e25', fontFamily: 'Poppins, sans-serif' }}
-              >
-                Get Started
-              </Button></a>
+                <Button
+                  variant="primary"
+                  size="medium"
+                  rightIcon={{
+                    src: '/images/img_primary.svg',
+                    width: 22,
+                    height: 24,
+                  }}
+                  className="mx-auto px-6 sm:px-8 md:px-10 py-2 sm:py-3 text-[14px] sm:text-[16px] md:text-[18px] text-white bg-[#ef3e25] hover:bg-[#ef3e25] focus:bg-[#ef3e25] rounded-xl hover:scale-105 transition-transform"
+                  style={{ background: '#ef3e25' }}
+                >
+                  Get Started
+                </Button>
+              </a>
             </div>
           </div>
         </div>
       </section>
-<br />
+      <br />
       {/* Footer */}
       <Footer />
     </div>
