@@ -132,17 +132,17 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/contact-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/contact-us" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Contact
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/privacy-policy" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Terms & Conditions
                 </a>
               </li>

@@ -1,9 +1,34 @@
 import React, { useState } from 'react';
-import EditText from '../../../components/ui/EditText';
+import EditText from '../components/ui/EditText';
+import Header from '@/components/common/Header';
+import Footer from '@/components/common/Footer';
 
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxUIe4ZvsWDCVsixByyJR0FV78rG7FZt0pm7DDGM_6JNJVZsC3EeHyUmU_fGU3VySKs/exec';
 
-const ContactFormSection = () => {
+const faqs = [
+  {
+    question: 'What makes MyProBuddy different from other fundraising platforms?',
+    answer:
+      'Unlike traditional advisory firms, we work closely with you throughout the entire funding journey. Our services include mock pitches, investor networking, business plan development, valuation advisory, and strategic mentorship tailored to your unique needs.',
+  },
+  {
+    question: 'Can I access mentorship through MyProBuddy?',
+    answer:
+      'Absolutely. Our curated mentorship program connects you with industry leaders who offer guidance, share insights, and help you navigate challenges in your fundraising and business journey.',
+  },
+  {
+    question: 'How can I connect with investors through MyProBuddy?',
+    answer:
+      'We provide access to a curated network of 558K+ investors, including VCs, angel investors, HNIs, and super angels. Our platform bridges the gap between startups and capital.',
+  },
+  {
+    question: 'Is there a specific industry or sector MyProBuddy focuses on?',
+    answer:
+      'No. We work with startups across diverse industries including tech, fintech, edtech, healthtech, D2C brands, sustainability, and more. Our investor network is equally broad, catering to various sectors.',
+  },
+];
+
+const ContactUs = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -14,6 +39,7 @@ const ContactFormSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
 
   const handleInputChange = (field, value) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -61,55 +87,85 @@ const ContactFormSection = () => {
       setIsSubmitting(false);
     }
   };
-  return (
-    <section id="contact-form-section" className="w-full relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
-      </div>
 
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative" style={{ fontFamily: 'Poppins, sans-serif' }}>
-        <div className="flex flex-col lg:flex-row justify-between items-center py-20 lg:py-24 gap-12 lg:gap-16">
-          {/* Left Content - Call to Action */}
-          <div className="w-full lg:w-[45%] flex flex-col gap-6 lg:gap-8 justify-start items-start text-center lg:text-left">
-            <div className="flex flex-col gap-0 lg:gap-3">
+  return (
+    <section id="contact-us-section" className="w-full relative overflow-hidden">
+      <Header />
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative">
+        <div className="flex flex-col gap-1 lg:gap-[6px] justify-start items-center px-4 lg:px-14">
               <h2
-                className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-0 sm:mb-2 lg:mb-3"
-                style={{ letterSpacing: '-2px', color: '#5d248f' , fontFamily: 'Poppins, sans-serif' }}
+                className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
+                style={{
+                  letterSpacing: '-2px',
+                  fontFamily: 'Poppins, sans-serif',
+                  textAlign: 'center',
+                }}
               >
-                Let's Make it
-                <span className="text-[#ff6b35]"> Happen</span>
+                <span
+                  className="text-primary-purple-2"
+                  style={{ color: '#5d248f', fontFamily: 'Poppins, sans-serif' }}
+                >
+                  Get in{' '}
+                </span>
+                <span className="text-[#fc5109]">Touch</span>
+               
               </h2>
-              <p className="text-xl lg:text-2xl font-poppins font-medium leading-[32px] lg:leading-[36px] mb-0" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Start your fundraising journey today!
-              </p>
-              <p className="text-base lg:text-lg font-poppins font-normal leading-[26px] lg:leading-[30px] text-white/75 max-w-lg">
-                Join thousands of successful entrepreneurs who have transformed their startups with
-                our expert guidance and investor network.
+              <p
+                className="text-base sm:text-lg lg:text-xl font-poppins font-medium leading-[22px] sm:leading-[30px] text-center text-primary mt-1 sm:mt-2"
+                style={{ fontFamily: 'Poppins, sans-serif' }}
+              >
+                 We’re a team of funding specialists helping founders become investable and access the right capital.
               </p>
             </div>
-          </div>
 
-          {/* Right Content - Contact Form */}
-          <div className="w-full lg:w-[45%] max-w-md lg:max-w-lg">
-            <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10">
+        
+       
+        <div className="flex flex-col lg:flex-row justify-center items-start py-10 sm:py-14 lg:py-24 gap-0 lg:gap-8">
+          {/* Left: Contact Info */}
+          <div className="w-full lg:w-[28%] flex flex-col gap-4 lg:gap-8 items-center lg:items-start">
+            <div className="w-full flex flex-col items-center lg:items-start">
+              <h3 className="text-lg sm:text-xl font-poppins font-semibold mb-4 text-black text-center lg:text-left" style={{ fontFamily: 'Poppins, sans-serif' }}>Contact Information</h3>
+              <div className="flex flex-col gap-4 w-full items-center lg:items-start">
+                <div className="flex items-center gap-3 h-12 justify-center lg:justify-start w-full">
+                  <span className="w-11 h-11 flex items-center justify-center rounded-full bg-[#5d248f]">
+                    <svg width="40" height="40" fill="none" viewBox="0 0 22 22">
+                      <circle cx="11" cy="11" r="11" fill="#5d248f" />
+                      <path d="M7.5 8.5h7M7.5 11h7M7.5 13.5h4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                  </span>
+                  <span className="text-[18px] font-poppins font-medium text-black" style={{ fontFamily: 'Poppins, sans-serif' }}>reachus@myprobuddy.com</span>
+                </div>
+                <div className="flex items-center gap-3 h-12 justify-center lg:justify-start w-full">
+                  <span className="w-11 h-11 flex items-center justify-center rounded-full bg-[#5d248f]">
+                    <svg width="40" height="40" fill="none" viewBox="0 0 22 22">
+                      <circle cx="11" cy="11" r="11" fill="#5d248f" />
+                      <path d="M8.5 10.5c.5 1.5 2 3 3.5 3.5l1-1a1 1 0 0 1 1-.25c.5.13 1.5.5 1.5.5a1 1 0 0 1 .5 1.25c-.25.75-1.25 2-3.5 2-2.25 0-4.5-2.25-4.5-4.5 0-2.25 1.25-3.25 2-3.5a1 1 0 0 1 1.25.5s.37 1 .5 1.5a1 1 0 0 1-.25 1l-1 1Z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                    </svg>
+                  </span>
+                  <span className="text-[18px] font-poppins font-medium text-black" style={{ fontFamily: 'Poppins, sans-serif' }}>+91-99522-37700</span>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          {/* Right: Contact Form */}
+          <div className="w-full lg:w-[40%] max-w-xl lg:ml-6 xl:ml-10">
+            <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10" style={{ fontFamily: 'Poppins, sans-serif' }}>
               <div className="flex flex-col gap-6 sm:gap-8">
                 <div className="text-center">
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-poppins font-bold leading-[28px] sm:leading-[36px] text-[#333333]">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-poppins font-bold leading-[28px] sm:leading-[36px] text-[#333333]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     Get Started Now
                   </h3>
-                  <p className="text-sm sm:text-base text-[#666666]">
+                  <p className="text-sm sm:text-base text-[#666666]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     Fill out the form and we'll get back to you within 24 hours
                   </p>
                 </div>
-
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-5">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-5" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   {toast && (
                     <div className={`w-full text-center rounded-lg py-2 px-4 ${toast.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                       {toast.message}
                     </div>
                   )}
-
                   {/* Name Fields */}
                   <div className="flex flex-col gap-2 w-full">
                     <label className="text-sm font-semibold text-[#333333]">Full Name *</label>
@@ -130,7 +186,6 @@ const ContactFormSection = () => {
                       />
                     </div>
                   </div>
-
                   {/* Email */}
                   <div className="flex flex-col gap-2 w-full">
                     <label className="text-sm font-semibold text-[#333333]">Business Email *</label>
@@ -143,7 +198,6 @@ const ContactFormSection = () => {
                       required
                     />
                   </div>
-
                   {/* Phone */}
                   <div className="flex flex-col gap-2 w-full">
                     <label className="text-sm font-semibold text-[#333333]">Phone Number *</label>
@@ -156,7 +210,6 @@ const ContactFormSection = () => {
                       required
                     />
                   </div>
-
                   {/* Company & Website */}
                   <div className="flex flex-col sm:flex-row gap-3 w-full">
                     <div className="flex flex-col gap-2 w-full">
@@ -180,7 +233,6 @@ const ContactFormSection = () => {
                       />
                     </div>
                   </div>
-
                   {/* Submit */}
                   <button
                     type="submit"
@@ -189,7 +241,6 @@ const ContactFormSection = () => {
                   >
                     {isSubmitting ? 'Submitting...' : 'Start Your Fundraising Journey'}
                   </button>
-
                   {/* Trust Indicators */}
                   <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pt-4 border-t border-gray-100">
                     <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -210,9 +261,52 @@ const ContactFormSection = () => {
             </div>
           </div>
         </div>
+        {/* FAQ Section */}
+        <div className="max-w-2xl mx-auto mt-16">
+          <h2
+            className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
+            style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif', textAlign: 'center' }}
+          >
+            <span className="text-primary-purple-2" style={{ color: '#5d248f' }}>
+              Frequently Asked
+            </span>
+            <span className="text-[#f46d19]"> </span>
+            <span className="text-[#fc5109]">Questions</span>
+            <span className="text-[#f46d19]"> </span>
+          </h2>
+          <div className="flex flex-col gap-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden bg-white">
+                <button
+                  className="w-full flex justify-between items-center px-5 py-4 text-left focus:outline-none"
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  style={{ fontFamily: 'Poppins, sans-serif' }}
+                >
+                  <span className="text-base font-poppins font-medium text-global-3" style={{ fontFamily: 'Poppins, sans-serif' }}>{faq.question}</span>
+                  <svg
+                    className={`w-5 h-5 transition-transform duration-200 ${openFaq === idx ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="#5d248f"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {openFaq === idx && (
+                  <div className="px-5 pb-4 text-sm text-gray-700 font-poppins font-normal" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+      <div className="h-10 sm:h-16 lg:h-24" />
+      <Footer />
     </section>
   );
 };
 
-export default ContactFormSection;
+export default ContactUs;
