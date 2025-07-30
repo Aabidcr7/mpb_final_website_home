@@ -27,6 +27,7 @@ const HeroSection = () => {
 
 
           {/* CTA Button */}
+             <a href="/get-started">
           <Button
             variant="orange"
             size="large"
@@ -35,7 +36,7 @@ const HeroSection = () => {
             data-aos-delay="200"
              style={{ fontFamily: 'Poppins, sans-serif' }}>
             Get Started Today
-          </Button>
+          </Button></a>
         </div>
       </div>
     </section>
