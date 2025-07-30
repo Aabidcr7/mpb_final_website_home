@@ -1,10 +1,15 @@
 
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import FundingCard from "./FundingCard";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
 
 export const FundingPlatform = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: true, offset: 80, easing: 'ease-in-out' });
+  }, []);
   const fundingOptions = [
     {
       title: "Debt Fund",
@@ -39,16 +44,17 @@ export const FundingPlatform = () => {
       <div 
         className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden"
         style={{ background: "var(--gradient-background)" }}
+        data-aos="fade"
       >
         {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden" data-aos="fade-in" data-aos-delay="200">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-funding-purple/5 rounded-full blur-3xl animate-float"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-funding-orange/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-funding-red/3 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-20 space-y-6 animate-fade-in">
+          <div className="text-center mb-20 space-y-6 animate-fade-in" data-aos="fade-up">
             <h2
               className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
               style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif' }}
@@ -65,16 +71,17 @@ export const FundingPlatform = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center" style={{ fontFamily: 'Poppins, sans-serif' }} data-aos="fade-up" data-aos-delay="300">
             {fundingOptions.map((option, index) => (
-              <FundingCard
-                key={index}
-                title={option.title}
-                description={option.description}
-                iconSrc={option.iconSrc}
-                onSelect={() => handleSelect(option.title)}
-                delay={index * 200}
-              />
+              <div data-aos="zoom-in" data-aos-delay={400 + index * 150} key={option.title}>
+                <FundingCard
+                  title={option.title}
+                  description={option.description}
+                  iconSrc={option.iconSrc}
+                  onSelect={() => handleSelect(option.title)}
+                  delay={index * 200}
+                />
+              </div>
             ))}
           </div>
         </div>

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import EditText from '../components/ui/EditText';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
@@ -29,6 +31,9 @@ const faqs = [
 ];
 
 const ContactUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: true, offset: 80, easing: 'ease-in-out' });
+  }, []);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -89,10 +94,10 @@ const ContactUs = () => {
   };
 
   return (
-    <section id="contact-us-section" className="w-full relative overflow-hidden">
+    <section id="contact-us-section" className="w-full relative overflow-hidden" data-aos="fade">
       <Header />
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative">
-        <div className="flex flex-col gap-1 lg:gap-[6px] justify-start items-center px-4 lg:px-14">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-14 relative" data-aos="fade-up">
+        <div className="flex flex-col gap-1 lg:gap-[6px] justify-start items-center px-4 lg:px-14" data-aos="fade-up">
               <h2
                 className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
                 style={{
@@ -120,7 +125,7 @@ const ContactUs = () => {
 
         
        
-        <div className="flex flex-col lg:flex-row justify-center items-start py-10 sm:py-14 lg:py-24 gap-0 lg:gap-8">
+        <div className="flex flex-col lg:flex-row justify-center items-start py-10 sm:py-14 lg:py-24 gap-0 lg:gap-8" data-aos="fade-up" data-aos-delay="200">
           {/* Left: Contact Info */}
           <div className="w-full lg:w-[28%] flex flex-col gap-4 lg:gap-8 items-center lg:items-start">
             <div className="w-full flex flex-col items-center lg:items-start">
@@ -262,7 +267,7 @@ const ContactUs = () => {
           </div>
         </div>
         {/* FAQ Section */}
-        <div className="max-w-2xl mx-auto mt-16">
+        <div className="max-w-2xl mx-auto mt-16" data-aos="fade-up" data-aos-delay="400">
           <h2
             className="text-[26px] sm:text-[38px] md:text-[46px] lg:text-[50px] font-poppins font-medium leading-[38px] sm:leading-[57px] md:leading-[68px] lg:leading-[74px] mb-6"
             style={{ letterSpacing: '-2px', fontFamily: 'Poppins, sans-serif', textAlign: 'center' }}

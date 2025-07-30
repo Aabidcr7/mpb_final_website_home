@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 
 const TermsAndConditions = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: true, offset: 80, easing: 'ease-in-out' });
+  }, []);
   return (
-    <section className="w-full relative overflow-hidden">
+    <section className="w-full relative overflow-hidden" data-aos="fade">
       <Header />
-      <div className="min-h-screen bg-white px-4 sm:px-8 py-12 max-w-7xl mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }}>
+      <div className="min-h-screen bg-white px-4 sm:px-8 py-12 max-w-7xl mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }} data-aos="fade-up">
       <h1
         className="text-[40px] sm:text-[56px] font-poppins font-medium mb-6 text-center"
         style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#fc5109' }}
+        data-aos="fade-up"
       >
         Terms and Conditions
       </h1>
-      <p className="text-[22px] font-poppins font-semibold text-black mb-8 leading-tight" style={{ fontFamily: 'Poppins', letterSpacing: '-1px' }}>
+      <p className="text-[22px] font-poppins font-semibold text-black mb-8 leading-tight" style={{ fontFamily: 'Poppins', letterSpacing: '-1px' }} data-aos="fade-up" data-aos-delay="100">
         Please read these terms and conditions carefully before using our website.
       </p>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="200">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           1. Acceptance of Terms
         </h2>
@@ -24,7 +30,7 @@ const TermsAndConditions = () => {
           Your access to and use of this website, as well as any services provided by MyProBuddy, are conditioned upon your acceptance and compliance with these terms and conditions. By accessing this website and using our services, you acknowledge that you have read, understood, and agree to be bound by these terms. If you do not agree with any part of these terms, please do not use our website or services.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="300">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           2. User Responsibilities
         </h2>
@@ -38,7 +44,7 @@ const TermsAndConditions = () => {
           <li className="text-[15px] sm:text-[14px] md:text-[16px] font-poppins font-medium text-global-3" style={{ fontFamily: 'Poppins', letterSpacing: '-0.5px' }}>Impersonate any person or entity, or misrepresent your affiliation with a person or entity.</li>
         </ul>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="400">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           3. Intellectual Property
         </h2>
@@ -49,7 +55,7 @@ const TermsAndConditions = () => {
           You may not copy, reproduce, republish, upload, post, transmit, or distribute any content from this website without prior written permission from MyProBuddy.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="500">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           4. Limitation of Liability
         </h2>
@@ -57,7 +63,7 @@ const TermsAndConditions = () => {
           MyProBuddy shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with your use of our website or services, including but not limited to: Any errors or omissions in any content or materials. Any unauthorized access to or use of our servers and/or any personal information stored therein. Any interruption or cessation of transmission to or from our website. Any bugs, viruses, trojan horses, or similar issues transmitted through the website.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="600">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           5. Third-Party Links
         </h2>
@@ -65,7 +71,7 @@ const TermsAndConditions = () => {
           Our website may contain links to third-party websites or services that are not owned or controlled by MyProBuddy. We are not responsible for the content, privacy policies, or practices of any third-party websites. Accessing any third-party sites is at your own risk, and we recommend reviewing their terms and conditions and privacy policies.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="700">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           6. Changes to the Terms
         </h2>
@@ -73,7 +79,7 @@ const TermsAndConditions = () => {
           We reserve the right to update or modify these Terms and Conditions at any time without prior notice. Changes will be effective immediately upon posting on this page. Your continued use of the website after any changes indicates your acceptance of the revised terms.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="800">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           7. Privacy Policy
         </h2>
@@ -81,7 +87,7 @@ const TermsAndConditions = () => {
           Your use of the website is also governed by our Privacy Policy, which explains how we collect, use, and protect your information. By using the website, you consent to the practices described in the Privacy Policy.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="900">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           8. Governing Law and Jurisdiction
         </h2>
@@ -89,7 +95,7 @@ const TermsAndConditions = () => {
           These Terms and Conditions shall be governed by and construed in accordance with the laws of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="1000">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           9. Payment and No Refund Policy
         </h2>
@@ -115,7 +121,7 @@ const TermsAndConditions = () => {
           We encourage clients to review all service details, deliverables, and timelines carefully before proceeding with any transaction. If you have any issues or concerns regarding our services, you may contact our support team, and we will make reasonable efforts to address your concerns.
         </p>
       </div>
-        <div className="text-[18px] font-poppins text-black mt-10" style={{ fontFamily: 'Poppins' }}>
+        <div className="text-[18px] font-poppins text-black mt-10" style={{ fontFamily: 'Poppins' }} data-aos="fade-up" data-aos-delay="900">
           These Terms and Conditions were last updated on May 06, 2025.
         </div>
       </div>

@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    AOS.init({ duration: 900, once: true, offset: 80, easing: 'ease-in-out' });
+  }, []);
   return (
-    <section className="w-full relative overflow-hidden">
+    <section className="w-full relative overflow-hidden" data-aos="fade">
       <Header />
-      <div className="min-h-screen bg-white px-4 sm:px-8 py-12 max-w-7xl mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }}>
+      <div className="min-h-screen bg-white px-4 sm:px-8 py-12 max-w-7xl mx-auto" style={{ fontFamily: 'Poppins, sans-serif' }} data-aos="fade-up">
       <h1
         className="text-[40px] sm:text-[56px] font-poppins font-medium mb-6 text-center"
         style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#fc5109' }}
+        data-aos="fade-up"
       >
         Privacy Policy
       </h1>
-      <p className="text-[22px] font-poppins font-semibold text-black mb-8 leading-tight" style={{ fontFamily: 'Poppins', letterSpacing: '-1px' }}>
+      <p className="text-[22px] font-poppins font-semibold text-black mb-8 leading-tight" style={{ fontFamily: 'Poppins', letterSpacing: '-1px' }} data-aos="fade-up" data-aos-delay="100">
         Please read these Privacy Policies carefully before using our website.
       </p>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="200">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           1. Information Collection
         </h2>
@@ -41,7 +47,7 @@ const PrivacyPolicy = () => {
           <li className="text-[15px] sm:text-[14px] md:text-[16px] font-poppins font-medium text-global-3"style={{ fontFamily: 'Poppins', letterSpacing: '-0.5px' }}>It is necessary to fulfill a legal obligation or enforce our Terms and Conditions.</li>
         </ul>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="300">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           2. Data Security
         </h2>
@@ -57,7 +63,7 @@ const PrivacyPolicy = () => {
           Despite our efforts, no method of data transmission or storage is completely secure. You acknowledge and accept this risk when using our services.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="400">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           3. Cookies
         </h2>
@@ -74,7 +80,7 @@ const PrivacyPolicy = () => {
           You can control or disable cookies through your browser settings. However, please note that some features or services on our website may not function properly without cookies.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="500">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           4. Third-Party Links
         </h2>
@@ -82,7 +88,7 @@ const PrivacyPolicy = () => {
           Our website may contain links to third-party websites or services that are not owned or operated by MyProBuddy. We are not responsible for the content, privacy practices, or policies of such external websites. We strongly recommend that you review their privacy policies before engaging with them or providing any personal data.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="600">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           5. Data Retention
         </h2>
@@ -90,7 +96,7 @@ const PrivacyPolicy = () => {
           We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable laws and regulations. Once the data is no longer needed, we securely delete or anonymize it.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="700">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           6. User Rights
         </h2>
@@ -106,7 +112,7 @@ const PrivacyPolicy = () => {
           <li className="text-[15px] sm:text-[14px] md:text-[16px] font-poppins font-medium text-global-3"style={{ fontFamily: 'Poppins', letterSpacing: '-0.5px' }}>Request data portability (if applicable under local law)</li>
         </ul>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="800">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           7. Consent
         </h2>
@@ -114,7 +120,7 @@ const PrivacyPolicy = () => {
           By using our website, submitting information, or engaging with our services, you consent to the collection, use, and processing of your personal information as described in this Privacy Policy.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-up" data-aos-delay="300">
         <h2 className="text-[30px] font-poppins font-medium mb-2" style={{ letterSpacing: '-2px', fontFamily: 'Poppins', color: '#5d248f' }}>
           8. Changes to this Privacy Policy
         </h2>
@@ -122,7 +128,7 @@ const PrivacyPolicy = () => {
           We reserve the right to update or modify this Privacy Policy at any time. All changes will be posted on this page with an updated effective date. We encourage you to review this page periodically to stay informed of how we are protecting your information.
         </p>
       </div>
-        <div className="text-[18px] font-poppins text-black mt-10" style={{ fontFamily: 'Poppins' }}>
+        <div className="text-[18px] font-poppins text-black mt-10" style={{ fontFamily: 'Poppins' }} data-aos="fade-up" data-aos-delay="900">
           These Privacy Policies were last updated on May 06, 2025.
         </div>
       </div>
