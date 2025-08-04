@@ -760,7 +760,7 @@ const Home = () => {
                       </div>
                     </div>
                     <p className="text-xs lg:text-xs font-poppins font-normal leading-[18px] text-[#636363]">
-                      MyProBuddy did not just help us raise funds — they <br />helped us think bigger. What I appreciated most was <br />their speed, precision, and ability to simplify the <br />complex. With their guidance, we secured the capital <br />we needed and walked away with a stronger <br />business foundation.
+                      MyProBuddy did not just help us raise funds  they <br />helped us think bigger. What I appreciated most was <br />their speed, precision, and ability to simplify the <br />complex. With their guidance, we secured the capital <br />we needed and walked away with a stronger <br />business foundation.
                     </p>
                     <RatingBar rating={5} readonly size="small" />
                   </div>

@@ -122,7 +122,7 @@ const About = () => {
       icon: <AccessCapitalIcon />, // inline SVG for Access to Capital
       title: 'Access to Capital',
       description:
-        'Connect with over 558,000+ investors—including VCs, angels, HNIs, CSR funds, and impact investors.',
+        'Connect with over 558,000+ investorsincluding VCs, angels, HNIs, CSR funds, and impact investors.',
     },
     {
       icon: <SupportInfraIcon />, // inline SVG for Smart Support Infrastructure

@@ -51,7 +51,7 @@ const About = () => {
     {
       icon: '/images/img_icon_wrap_gray_100.png',
       title: 'Access to Capital',
-      description: 'Connect with over 558,000+ investors—including VCs, angels, HNIs, CSR funds, and impact investors.'
+      description: 'Connect with over 558,000+ investorsincluding VCs, angels, HNIs, CSR funds, and impact investors.'
     },
     {
       icon: '/images/img_icon_wrap_gray_100.png',

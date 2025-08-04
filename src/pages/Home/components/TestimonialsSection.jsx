@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
                 <p className="text-xs md:text-sm text-[#636363] mb-4" style={{ fontFamily: 'Poppins' }}>
-                  MyProBuddy did not just help us raise funds — they helped us think bigger. What I
+                  MyProBuddy did not just help us raise funds  they helped us think bigger. What I
                   appreciated most was their speed, precision, and ability to simplify the complex.
                   With their guidance, we secured the capital we needed and walked away with a
                   stronger business foundation.
