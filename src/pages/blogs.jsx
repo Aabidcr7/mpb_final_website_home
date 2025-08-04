@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const FundingResources = () => {
   const navigate = useNavigate();
@@ -85,9 +86,8 @@ const FundingResources = () => {
   };
 
   return (
-    
-    <div className="w-full  min-h-screen">
-       <Header />
+    <div className="w-full min-h-screen">
+      <Header />
       {/* Main Container */}
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -102,10 +102,9 @@ const FundingResources = () => {
                     Blogs
                   </span>
                 </div>
-                
                 {/* Main Title */}
                 <div className="flex flex-col items-center justify-start gap-[-15px] sm:gap-[-20px] md:gap-[-30px] mt-2">
-                  <h1 className="text-[28px] sm:text-[35px] md:text-[40px] lg:text-[45px] font-medium font-['Poppins'] leading-[42px] sm:leading-[52px] md:leading-[60px] lg:leading-[68px] text-center text-[#101010]"   style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
+                  <h1 className="text-[28px] sm:text-[35px] md:text-[40px] lg:text-[45px] font-medium font-['Poppins'] leading-[42px] sm:leading-[52px] md:leading-[60px] lg:leading-[68px] text-center text-[#101010]" style={{ letterSpacing: '-2px', fontFamily: 'Poppins' }}>
                     Explore founder-focused
                   </h1>
                   <h1 className="text-[28px] sm:text-[35px] md:text-[40px] lg:text-[45px] font-medium font-['Poppins'] leading-[42px] sm:leading-[52px] md:leading-[60px] lg:leading-[68px] text-center text-[#101010]">
@@ -113,7 +112,6 @@ const FundingResources = () => {
                   </h1>
                 </div>
               </div>
-              
               {/* Subtitle */}
               <p className="text-[16px] sm:text-[18px] md:text-[20px] font-normal font-['Poppins'] leading-[24px] sm:leading-[27px] md:leading-[30px] text-center text-[#070707] mt-4 sm:mt-6 md:mt-8">
                 A collection of top notch blog posts to help you convert.
@@ -124,11 +122,15 @@ const FundingResources = () => {
             <div className="w-full max-w-[1064px] flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px]">
               {/* Regular Blog Posts Grid */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] sm:gap-[20px] md:gap-[22px]">
-                {blogPosts?.map((post) => (
-                  <div
+                {blogPosts?.map((post, idx) => (
+                  <motion.div
                     key={post?.id}
                     onClick={() => handleCardClick(post?.route)}
                     className="bg-[linear-gradient(180deg,#fff7ec_0%,_#fff7eb66_100%)] border border-[#b8b8b833] rounded-[12px] p-[16px] sm:p-[20px] md:p-[22px] flex flex-col gap-[20px] sm:gap-[24px] md:gap-[28px] cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-[#b8b8b866]"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: idx * 0.07 }}
+                    viewport={{ once: true, amount: 0.25 }}
                   >
                     {/* Blog Image */}
                     <img
@@ -136,7 +138,7 @@ const FundingResources = () => {
                       alt={post?.title}
                       className="w-full h-[180px] sm:h-[200px] md:h-[224px] object-cover rounded-[6px]"
                     />
-                    
+
                     {/* Blog Content */}
                     <div className="flex flex-col gap-[24px] sm:gap-[28px] md:gap-[30px]">
                       {/* Title and Description */}
@@ -148,7 +150,7 @@ const FundingResources = () => {
                           {post?.description}
                         </p>
                       </div>
-                      
+
                       {/* Author and Date Row */}
                       <div className="flex flex-row justify-between items-center w-full">
                         {/* Author Section */}
@@ -167,7 +169,6 @@ const FundingResources = () => {
                             </span>
                           </div>
                         </div>
-                        
                         {/* Published Date Section */}
                         <div className="flex flex-col gap-[6px] sm:gap-[8px] md:gap-[10px] items-end">
                           <span className="text-[14px] sm:text-[15px] md:text-[16px] font-normal font-['Poppins'] leading-[20px] sm:leading-[22px] md:leading-[24px] text-right text-[#101010b2]">
@@ -179,14 +180,18 @@ const FundingResources = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
               {/* Featured Blog Post */}
-              <div 
+              <motion.div 
                 onClick={() => handleCardClick(featuredPost?.route)}
                 className="bg-[linear-gradient(180deg,#fff7ec_0%,_#fff7eb66_100%)] border border-[#b8b8b833] rounded-[12px] p-[20px] sm:p-[22px] md:p-[24px] flex flex-col gap-[20px] sm:gap-[24px] md:gap-[28px] cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-[#b8b8b866]"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                viewport={{ once: true, amount: 0.3 }}
               >
                 {/* Featured Image */}
                 <img
@@ -194,7 +199,7 @@ const FundingResources = () => {
                   alt={featuredPost?.title}
                   className="w-full h-[300px] sm:h-[400px] md:h-[486px] object-cover rounded-[6px]"
                 />
-                
+
                 {/* Featured Content */}
                 <div className="flex flex-col gap-[24px] sm:gap-[28px] md:gap-[30px]">
                   {/* Title and Description */}
@@ -206,7 +211,7 @@ const FundingResources = () => {
                       {featuredPost?.description}
                     </p>
                   </div>
-                  
+
                   {/* Author and Date Row */}
                   <div className="flex flex-row justify-between items-center w-full">
                     {/* Author Section */}
@@ -225,7 +230,6 @@ const FundingResources = () => {
                         </span>
                       </div>
                     </div>
-                    
                     {/* Published Date Section */}
                     <div className="flex flex-col gap-[8px] sm:gap-[9px] md:gap-[10px] items-end">
                       <span className="text-[14px] sm:text-[15px] md:text-[16px] font-normal font-['Poppins'] leading-[20px] sm:leading-[22px] md:leading-[24px] text-right text-[#101010b2]">
@@ -237,12 +241,12 @@ const FundingResources = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
-       <br />
+      <br />
       {/* Footer */}
       <Footer />
     </div>

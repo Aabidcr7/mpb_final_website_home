@@ -112,7 +112,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="https://www.myprobuddy.com/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Home
                 </a>
               </li>
@@ -122,7 +122,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.myprobuddy.com/founders-insights" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <a href="/founders-insights" className="text-gray-300 hover:text-white transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Blogs
                 </a>
               </li>

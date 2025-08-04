@@ -22,7 +22,7 @@ const VentureCapitalGuidePage = () => {
                 <h1 className="text-[24px] sm:text-[36px] md:text-[48px] font-normal leading-[36px] sm:leading-[54px] md:leading-[72px] text-center text-primary" style={{ letterSpacing: '-2px', fontFamily: 'Poppins'}}>
                   A Step-by-Step Guide to{' '}
                 </h1>
-                <h1 className="text-[24px] sm:text-[36px] md:text-[48px] font-normal leading-[36px] sm:leading-[54px] md:leading-[72px] text-center text-primary -mt-[15px] sm:-mt-[22px] md:-mt-[30px]">
+                <h1 className="text-[24px] sm:text-[36px] pt-2 md:text-[48px] font-normal leading-[36px] sm:leading-[54px] md:leading-[72px] text-center text-primary -mt-[15px] sm:-mt-[22px] md:-mt-[30px]">
                   Raising Venture Capital
                 </h1>
               </div>
